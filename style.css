@@ -1,0 +1,964 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #FFFAF5;
+}
+header{
+    display: flex;  
+    background-color: white;
+    padding: 0 100px;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    font-weight: 700;
+    color: #2C66B8;
+    font-size: 30px;
+}
+span{
+    color: #B85E2C;
+}
+#text{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+#top{
+    display: flex;
+    padding: 15px 0;
+    width: 200px;
+    justify-content: space-between;
+}
+.sign{
+    background-color: #2C66B8;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: small;
+}
+#navs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    padding-top: 18px;
+    
+}
+.nav-blue{
+    width: 50px;
+    height: 3px;
+    background-color: #26335D;
+    border: none;
+}
+.nav-pink{
+    width: 50px;
+    height: 3px;
+    background-color: #E5331C;
+    border: none;
+}
+
+
+
+.first-section{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+#text-side{
+    background-color: #EDF2F8;
+    width: 700px;
+    text-align: center;
+    padding: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.motto{
+    width: 300px;
+    margin-left: 130px;
+    text-align: start;
+}
+.more{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-left: 130px;
+}
+.explore{
+    padding: 10px;
+    background-color: #FF6551;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+.learn{
+    padding: 10px;
+    border: 1px solid #FF6551;
+    color: #FF6551;
+    width: 100px;
+    text-align: center;
+}
+#img{
+    width: 618px;
+    height: 433px;
+    background-color: #EDF2F8;
+}
+
+
+
+
+
+.second-section{
+    padding-left: 130px;
+    padding-top: 10px;
+    background-color: #FFFAF5;
+}
+
+.heading-text{
+    font-size: 30px;
+    font-weight: 500;
+}
+.line{
+    margin-left: 40px;
+    width: 81.35px;
+    height: 7.01px;
+    background-image: url(/MEA/IMG/line.png);
+}
+#offer-box{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#subject{
+    width: 280px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px #b8b9bb;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: #FF6551;
+    border-radius: 10px;
+}
+.icon-phy{
+    width: 50px;
+    height: 50px;
+    background-color: #2C66B8;
+    border-radius: 10px;
+}
+.icon-chm{
+    width: 50px;
+    height: 50px;
+    background-color: #B85E2C;
+    border-radius: 10px;
+}
+.sub-name{
+    font-size: 20px;
+    font-weight: 700;
+}
+hr{
+    width: 70px;
+    height: 2px;
+    margin: 0;
+    background-color: #FF6551;
+    border: 0;
+}
+
+
+
+.third-section{
+    padding-left: 130px;
+    background-color: #EDF2F8;
+    display: flex;  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading-text-third{
+    font-size: 30px;
+    font-weight: 500;
+    color: #2C66B8;
+}
+.line-third{
+    margin-left: 5px;
+    width: 81.35px;
+    height: 7.01px;
+    background-image: url(/MEA/IMG/line.png);
+}
+.most{
+    color: black;
+}
+.category{
+    margin: auto 50px;
+}
+#box-slider{
+    position: relative;
+    width: 100%;
+    margin:  20px auto;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+}
+#student-container{
+    width: 500px;
+    height: 480px;
+    background-color: white;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 5px 1px 1px 1px rgb(131, 131, 130);
+}
+#video-container{
+    padding-top: 20px; 
+}
+#video-desc{
+    color: black;
+    width: 200px;
+    margin-left: 20px;
+}
+.pp{
+    margin: 0;
+    color: #B85E2C;
+    text-align: left;
+}
+.hr{
+    width: 450px;
+    height: 1px;
+    border: none;
+    background-color: black;
+    margin:  10px auto;
+}
+.set{
+    color: black;
+    margin: 10px 20px;
+    text-align: left;
+    font-weight: 500;
+}
+.topic{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin-top: 10px;
+}
+#arrow{
+    padding: 10px;
+    background-color: #F9F8F8;
+    box-shadow: 1px 1px 1px 1px #a6a6a7;
+}
+
+
+
+
+
+
+.fourth-section{
+    padding: 20px 180px;
+}
+
+.heading-text-fourth{
+    font-size: 30px;
+    font-weight: 500;
+    color: #2C66B8;
+}
+.line-fourth{
+    margin-left: 50px;
+    width: 148px;
+    height: 7px;
+    background-image: url(/MEA/IMG/line2.png);
+}
+.achievement{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+#subscribers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.up{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+#instructor{
+    width: 149px;
+    height: 55px;
+    background-image: url(/MEA/IMG/instructor.png);
+}
+#video{
+    width: 120px;
+    height: 55px;
+    background-image: url(/MEA/IMG/video.png);
+}
+#subscriber{
+    width: 165px;
+    height: 55px;
+    background-image: url(/MEA/IMG/subscribers.png);
+}
+#user{
+    width: 142px;
+    height: 55px;
+    background-image: url(/MEA/IMG/user.png);
+}
+#img-achieve{
+    width: 315px;
+    height: 381px;
+    background-image: url(/MEA/IMG/smile.png);
+}
+
+
+.fifth-section{
+    background-color: #26335D;
+    padding: 20px 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading-text-fifth{
+    font-size: 30px;
+    font-weight: 500;
+    color: #E5331C;
+}
+.line-fifth{
+    margin-left: 50px;
+    width: 148px;
+    height: 7px;
+    background-image: url(/MEA/IMG/line3.png);
+}
+.white{
+    color: white;
+}
+.watch{
+    color: white;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#pay{
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+}
+#love{
+    width: 85px;
+    height: 80px;
+    background-image: url(/MEA/IMG/love.png);
+}
+#free{
+    font-weight: 700;
+    font-size: 20px;
+}
+#amount{
+    font-size: 30px;
+    font-weight: 800;
+    color: #B85E2C;
+    margin: 0;
+}
+#month{
+    font-size: smaller;
+    margin: 0;
+    color: #2C66B8;
+    font-weight: 400;
+}
+#secure{
+    font-size: smaller;
+    color: #646566;
+}
+#try{
+    width: 200px;
+    background-color: #E5331C;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.docs{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    margin: 10px auto;
+}
+#circle{
+    width: 23px;
+    height: 20px;
+    background-image: url(/MEA/IMG/circle.png);
+}
+
+
+
+.sixth-section{
+    background-color: #EDF2F8;
+    padding: 30px;
+}
+#how{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#how-img{
+    width: 612px;
+    height: 451px;
+    background-image: url(/MEA/IMG/how.png);
+}
+.sign-up{
+    width: 300px;
+    height: 140px;
+    padding: 10px;
+    background-color: white;
+}
+.signn{
+    font-size: 20px;
+    font-weight: 500;
+}
+.tt{
+    color: rgb(73, 73, 73);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#start{
+    width: 100px;
+    background-color: #26335D;
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.seventh-section{
+    margin-top: 20px;
+    margin-left: 150px;
+}
+#box-slider-one{
+    position: relative;
+    width: 100%;
+    margin:  20px auto;
+    height: 370px;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+    background-color: rgba(41, 40, 40, 0.055);
+}
+#student-container-one{
+    width: 269px;
+    height: 354px;
+    background-color: white;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 1px 1px 1px 1px rgb(131, 131, 130);
+}
+#student-feedback{
+    color: black;
+}
+#student-image-1{
+    background-image: url(/MEA/IMG/abdul.png);
+    width: 244px;
+    height: 272px;
+    margin: 10px auto;
+}
+#student-image-2{
+    background-image: url(/MEA/IMG/bacha.png);
+    width: 244px;
+    height: 272px;
+    margin: 10px auto;
+}
+#student-image-3{
+    background-image: url(/MEA/IMG/hussain.png);
+    width: 244px;
+    height: 272px;
+    margin: 10px auto;
+}
+#student-image-4{
+    background-image: url(/MEA/IMG/maina.png);
+    width: 244px;
+    height: 272px;
+    margin: 10px auto;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+.eight-section{
+    padding: 0 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#feeds{
+    position: relative;
+    width: 100%;
+    margin:  20px auto;
+    height: 350px;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+    color: black;
+    
+}
+#feed-box{
+    width: 492px;
+    height: 200px;
+    background-color: white;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 1px 1px 1px 1px rgb(131, 131, 130);
+    padding: 20px;
+}
+.student{
+    display: flex;
+    justify-content: space-between;
+}
+#pic-textt{
+    display: flex;
+}
+#pic{
+    width: 63px;
+    height: 62px;
+    background-image: url(/MEA/IMG/Ellipse.png);
+    margin-right: 10px;
+}
+#stu-name{
+    margin-top:-10px;
+}
+.jenny{
+    font-size: large;
+    font-weight: 500;
+}
+#jenny{
+    font-size: smaller;
+    text-align: left;
+    margin-top: -8px;
+}
+#quote-img{
+    width: 44px;
+    height: 32px;
+    background-image: url(/MEA/IMG/quote.png);
+}
+#student-text{
+    width: 100px;
+}
+
+#heading-hide{
+    display: none;
+}
+
+
+
+.ninth-section{
+    width: 1038px;
+    height: 473.01px;
+    background-image: url(/MEA/IMG/class.png);
+    margin: 0 150px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+.contact{
+    width: 424px;
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.884);
+    border-radius: 20px;
+    margin: auto 20px;
+    padding: 10px;
+}
+#contact-us{
+    width: 344px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: inherit;
+    border-radius: 5px;
+    border: 1px solid #BFBABA;
+}
+#contact-uss{
+    width: 355px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    background-color: inherit;
+    border-radius: 5px;
+    border: 1px solid #BFBABA;
+}
+#Submit{
+    background-color: #2C66B8;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.tenth-section{
+    margin-top: 20px;
+    background-color: #26335D;
+    padding: 20px 50px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer{
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: auto;
+}
+.letter{
+    font-size: 30px;
+}
+#here{
+    width: 300px;
+    padding: 5px;
+}
+#sub{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    background-color: #FF6551;
+    color: white;
+}
+#margin{
+    margin-top: 10px;
+}
+.bb{
+    font-weight: 800;
+    font-size: large;
+}
+#secure-second{
+    display: none; 
+}
+.sub-des-min{ 
+    display: none;
+}
+
+
+@media screen and (max-width: 1196px) {
+    .ninth-section{
+        margin: 0 auto;
+    }
+    .second-section{
+        padding: 10px 50px;
+    }
+    .motto{
+        width: 300px;
+        margin-left: 50px;
+        text-align: start;
+    }
+    header{
+        padding: 0 50px;
+    }
+    .more{
+        margin-left: 50px;
+    }
+    .third-section{
+        padding-left: 50px;
+    }
+    .fourth-section{
+        padding: 20px 50px;
+    }
+    .fifth-section{
+        padding: 20px 30px;
+    }
+    #how-img{
+        width: 494px;
+        height: 364.04px;
+        background-image: url(/MEA/IMG/group.png);
+    }
+    .sign-up{
+        width: 250px;
+        height: 100px;
+        padding: 10px;
+        
+    }
+    .signn{
+        margin: 0;
+    }
+    .seventh-section{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .eight-section{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1183px) {
+    #subject{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h2{
+        text-align: left;
+    }
+    .motto{
+        margin-left: 0;
+    }
+    .more{
+        margin-left: 0;
+    }
+    #offer-box{
+        width: 100%;
+        margin: 10px;
+    }
+    #box-slider{
+        position: relative;
+        width: 100%;
+        margin:  20px auto;
+        text-align: left;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        vertical-align: middle;
+    }
+    #student-container{
+        width: 470px;
+        height: 430px;
+    }
+    #hide{
+        display: none;
+    }
+    #vivid{
+        width: 400px;
+        height: 250px;
+        margin: auto;
+    }
+    #video-desc{
+        color: black;
+        width: 200px;
+        margin-left: 20px;
+    }
+    .cards{
+        position: relative;
+        width: 100%;
+        margin:  20px 0;
+        text-align: left;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        vertical-align: middle;
+    
+    }
+    #pay{
+        background-color: white;
+        width: 250px;
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+    #secure{
+        display: none;
+    }
+    #secure-second{
+        display: block;
+    }
+    .sign-up{
+        width: 230px;
+    }
+    #how-img{
+        width: 352px;
+        height: 308px;
+        background-image: url(/MEA/IMG/groupp.png);
+    }
+    .ninth-section{
+        justify-content: center;
+        width: 763px;
+        height: 473px;
+    }
+    #student-container-one{
+        width: 250px;
+        height: 320px;
+    }
+    #quote{
+       display: none;
+    }
+    
+    #student-image-1{
+        background-image: url(/MEA/IMG/abdulmini.png);
+        width: 224px;
+        height: 249.7px;
+        margin: 10px auto;
+    }
+    #student-image-2{
+        background-image: url(/MEA/IMG/bachamini.png);
+        width: 224px;
+        height: 249.7px;
+        margin: 10px auto;
+    }
+    #student-image-3{
+        background-image: url(/MEA/IMG/hussainmini.png);
+        width: 224px;
+        height: 249.7px;
+        margin: 10px auto;
+    }
+    #student-image-4{
+        background-image: url(/MEA/IMG/mainamini.png);
+        width: 224px;
+        height: 249.7px;
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width: 998px) {
+    #img{
+        width: 506px;
+        height: 433px;
+        background-image: url(/MEA/IMG/hidde.png);
+    }
+    .second-section{
+        padding: 5px;
+    }
+    .category{
+        padding: 0;
+        margin: auto 10px;
+    }
+    #hidee{
+        display: none;
+    }
+    #text-side{
+        width: 400px;
+    }
+    #offer-box{
+        position: relative;
+        width: 100%;
+        text-align: left;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        vertical-align: middle;
+        margin: 20px 0;
+    }
+    #subject{
+        margin-left: 50px;
+    }
+    
+    .sub-des{
+        display: none;
+    }
+    .sub-des-min{
+        display: block;
+    }
+    #footer{
+        width: 800px;
+    }
+   
+}
+
+@media screen and (max-width: 900px) {
+    #heading{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .line, .line-fifth, .line-fourth, .line-third {
+        margin: auto;
+    }
+    .up{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #navs{
+        display: block;
+        margin-top: 10px;
+    }
+    .nav-blue, .nav-pink{
+        margin-bottom: 5px;
+    }
+    #text, #top{
+        display: none;
+    }
+    #footer{
+        width: 700px;
+    }
+    .tenth-section{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .ninth-section{
+        width: 100%;
+        background-image: url(/MEA/IMG/classmini.png);
+    }
+    .tenth-section{
+        margin: 0;
+    }
+    #text-side{
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+    .motto{
+        margin: auto;
+    }
+    #img{
+        display: none;
+    }
+    .more{
+        margin: auto;
+        width: 400px;
+        justify-content: space-around;
+    }
+    .first-section{
+        padding: 0;
+    }
+    .third-section{
+        flex-direction: column;
+    }
+    #heading-hide{
+        display: block;
+        text-align: center;
+    }
+    .heading-text-third, .line-third{
+        display: none;
+    }
+    #img-achieve{
+        display: none;
+    }
+    #subscribers{
+        height: 250px;
+        justify-content: space-between;
+        width: 500px;
+        margin: auto;
+    }
+    #how-img{
+        display: none;
+    }
+}
