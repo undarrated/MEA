@@ -121,7 +121,7 @@ span{
     margin-left: 40px;
     width: 81.35px;
     height: 7.01px;
-    background-image: url(/MEA/IMG/line.png);
+    background-image: url(/IMG/line.png);
 }
 #offer-box{
     display: flex;
@@ -183,7 +183,7 @@ hr{
     margin-left: 5px;
     width: 81.35px;
     height: 7.01px;
-    background-image: url(/MEA/IMG/line.png);
+    background-image: url(/IMG/line.png);
 }
 .most{
     color: black;
@@ -203,30 +203,26 @@ hr{
 }
 #student-container{
     width: 500px;
-    height: 480px;
+    height: 450px;
     background-color: white;
     margin-right: 20px;
-    text-align: center;
+    padding: 20px;
     color: white;
     border-radius: 10px;
     display: inline-block;
     box-shadow: 5px 1px 1px 1px rgb(131, 131, 130);
 }
-#video-container{
-    padding-top: 20px; 
-}
 #video-desc{
     color: black;
-    width: 200px;
-    margin-left: 20px;
+    margin: 0;
 }
 .pp{
-    margin: 0;
+    
     color: #B85E2C;
     text-align: left;
 }
 .hr{
-    width: 450px;
+    width: 500px;
     height: 1px;
     border: none;
     background-color: black;
@@ -234,14 +230,13 @@ hr{
 }
 .set{
     color: black;
-    margin: 10px 20px;
     text-align: left;
     font-weight: 500;
 }
 .topic{
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    width: inherit;
     margin-top: 10px;
 }
 #arrow{
@@ -268,7 +263,7 @@ hr{
     margin-left: 50px;
     width: 148px;
     height: 7px;
-    background-image: url(/MEA/IMG/line2.png);
+    background-image: url(/IMG/line2.png);
 }
 .achievement{
     display: flex;
@@ -288,27 +283,27 @@ hr{
 #instructor{
     width: 149px;
     height: 55px;
-    background-image: url(/MEA/IMG/instructor.png);
+    background-image: url(/IMG/instructor.png);
 }
 #video{
     width: 120px;
     height: 55px;
-    background-image: url(/MEA/IMG/video.png);
+    background-image: url(/IMG/video.png);
 }
 #subscriber{
     width: 165px;
     height: 55px;
-    background-image: url(/MEA/IMG/subscribers.png);
+    background-image: url(/IMG/subscribers.png);
 }
 #user{
     width: 142px;
     height: 55px;
-    background-image: url(/MEA/IMG/user.png);
+    background-image: url(/IMG/user.png);
 }
 #img-achieve{
     width: 315px;
     height: 381px;
-    background-image: url(/MEA/IMG/smile.png);
+    background-image: url(/IMG/smile.png);
 }
 
 
@@ -326,7 +321,7 @@ hr{
     margin-left: 50px;
     width: 148px;
     height: 7px;
-    background-image: url(/MEA/IMG/line3.png);
+    background-image: url(/IMG/line3.png);
 }
 .white{
     color: white;
@@ -349,7 +344,7 @@ hr{
 #love{
     width: 85px;
     height: 80px;
-    background-image: url(/MEA/IMG/love.png);
+    background-image: url(/IMG/love.png);
 }
 #free{
     font-weight: 700;
@@ -390,7 +385,7 @@ hr{
 #circle{
     width: 23px;
     height: 20px;
-    background-image: url(/MEA/IMG/circle.png);
+    background-image: url(/IMG/circle.png);
 }
 
 
@@ -407,7 +402,7 @@ hr{
 #how-img{
     width: 612px;
     height: 451px;
-    background-image: url(/MEA/IMG/how.png);
+    background-image: url(/IMG/how.png);
 }
 .sign-up{
     width: 300px;
@@ -470,25 +465,25 @@ main{
     color: black;
 }
 #student-image-1{
-    background-image: url(/MEA/IMG/abdul.png);
+    background-image: url(/IMG/abdul.png);
     width: 244px;
     height: 272px;
     margin: 10px auto;
 }
 #student-image-2{
-    background-image: url(/MEA/IMG/bacha.png);
+    background-image: url(/IMG/bacha.png);
     width: 244px;
     height: 272px;
     margin: 10px auto;
 }
 #student-image-3{
-    background-image: url(/MEA/IMG/hussain.png);
+    background-image: url(/IMG/hussain.png);
     width: 244px;
     height: 272px;
     margin: 10px auto;
 }
 #student-image-4{
-    background-image: url(/MEA/IMG/maina.png);
+    background-image: url(/IMG/maina.png);
     width: 244px;
     height: 272px;
     margin: 10px auto;
@@ -538,7 +533,7 @@ main{
 #pic{
     width: 63px;
     height: 62px;
-    background-image: url(/MEA/IMG/Ellipse.png);
+    background-image: url(/IMG/Ellipse.png);
     margin-right: 10px;
 }
 #stu-name{
@@ -556,7 +551,7 @@ main{
 #quote-img{
     width: 44px;
     height: 32px;
-    background-image: url(/MEA/IMG/quote.png);
+    background-image: url(/IMG/quote.png);
 }
 #student-text{
     width: 100px;
@@ -571,7 +566,7 @@ main{
 .ninth-section{
     width: 1038px;
     height: 473.01px;
-    background-image: url(/MEA/IMG/class.png);
+    background-image: url(/IMG/class.png);
     margin: 0 150px;
     background-repeat: no-repeat;
     display: flex;
@@ -696,7 +691,7 @@ main{
     #how-img{
         width: 494px;
         height: 364.04px;
-        background-image: url(/MEA/IMG/group.png);
+        background-image: url(/IMG/group.png);
     }
     .sign-up{
         width: 250px;
@@ -747,10 +742,10 @@ main{
         vertical-align: middle;
     }
     #student-container{
-        width: 470px;
-        height: 430px;
+        width: 400px;
+        height: 400px;
     }
-    #hide{
+    #hidee{
         display: none;
     }
     #vivid{
@@ -760,8 +755,9 @@ main{
     }
     #video-desc{
         color: black;
-        width: 200px;
-        margin-left: 20px;
+    }
+    .hr{
+        width: 400px;
     }
     .cards{
         position: relative;
@@ -792,7 +788,7 @@ main{
     #how-img{
         width: 352px;
         height: 308px;
-        background-image: url(/MEA/IMG/groupp.png);
+        background-image: url(/IMG/groupp.png);
     }
     .ninth-section{
         justify-content: center;
@@ -808,25 +804,25 @@ main{
     }
     
     #student-image-1{
-        background-image: url(/MEA/IMG/abdulmini.png);
+        background-image: url(/IMG/abdulmini.png);
         width: 224px;
         height: 249.7px;
         margin: 10px auto;
     }
     #student-image-2{
-        background-image: url(/MEA/IMG/bachamini.png);
+        background-image: url(/IMG/bachamini.png);
         width: 224px;
         height: 249.7px;
         margin: 10px auto;
     }
     #student-image-3{
-        background-image: url(/MEA/IMG/hussainmini.png);
+        background-image: url(/IMG/hussainmini.png);
         width: 224px;
         height: 249.7px;
         margin: 10px auto;
     }
     #student-image-4{
-        background-image: url(/MEA/IMG/mainamini.png);
+        background-image: url(/IMG/mainamini.png);
         width: 224px;
         height: 249.7px;
         margin: 10px auto;
@@ -838,7 +834,7 @@ main{
     #img{
         width: 506px;
         height: 433px;
-        background-image: url(/MEA/IMG/hidde.png);
+        background-image: url(/IMG/hidde.png);
     }
     .second-section{
         padding: 5px;
@@ -912,9 +908,45 @@ main{
 }
 
 @media screen and (max-width: 766px) {
+    body{
+        font-size: 16px;
+    }
+    #text-slide{
+        width: 100%;
+    }
+    #subject{
+        height: 230px;
+        margin-left: 20px;
+    }
+    .second-section{
+        padding: 0;
+        margin: 0
+    }
+    #offer-box{
+        padding: 0;
+    }
+    .third-section{
+        flex-direction: column;
+        padding: 10px;
+    }
+    #student-container, #vivid, .hr{
+        width: 300px;
+    }
+    .mobile{
+        display: none;
+    }
+
+    .achievement{
+        margin-bottom: 50px;
+    }
+    #try{
+        font-size: 18px;
+        width: 150px;
+        padding: 5px;
+    }
     .ninth-section{
         width: 100%;
-        background-image: url(/MEA/IMG/classmini.png);
+        background-image: url(/IMG/classmini.png);
     }
     .tenth-section{
         margin: 0;
@@ -939,9 +971,7 @@ main{
     .first-section{
         padding: 0;
     }
-    .third-section{
-        flex-direction: column;
-    }
+    
     #heading-hide{
         display: block;
         text-align: center;
