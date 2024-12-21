@@ -139,11 +139,7 @@
 
       }
 
-    .scrollable-container-two{
-        overflow-x: auto;
-        white-space: nowrap;
-        padding-bottom: 40px;
-      }
+    
     .scrollable-container-one {
        background-color: #EDF2F8;
        overflow-x: auto;
@@ -163,7 +159,7 @@
         display: inline-block;
         padding: 10px;
         background-color: white;
-        margin: 10px 30px;
+        margin: 10px 10px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       }
       
@@ -317,11 +313,14 @@
       display: flex;
       justify-content: space-around;
       margin-top: 20px;
+      margin-left: -15px;
       
     }
 
     #flex{
       background-color: #FFFAF5;
+      margin: 0;
+      padding: 0;
 
     }
 
@@ -330,7 +329,7 @@
       justify-content: space-around;
       margin-top: 100px;
       margin-bottom: 50px;
-      
+      margin-left: -15px;
     }
     .ins{
       width: 120px;
@@ -341,7 +340,7 @@
 
     h2{
       margin: 0;
-      font-size: 1.37rem;
+      font-size: 1.125rem;
       font-weight: 500;
     }
     .up{
@@ -350,12 +349,25 @@
     }
 
 
+
+
+
+
+
     .fourth{
       background-color: #252B42;
+      
+    }
+
+    .scrollable-container-two{
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 40px;
+      display: none;
     }
 
     .what-we-offer-2{
-      font-size: 1.375rem;
+      font-size: 1.125rem;
       font-weight: bold;
       color: #2C66B8;
       font-family: "Inknut Antiqua", serif;
@@ -431,11 +443,57 @@
       color: #565454;
       margin-top: 2px;
     }
+    .row{
+      font-family: "Inter", sans-serif;
+      width: 80%;
+      margin: auto;
+      font-size: 0.875rem;
+      padding-bottom: 20px;
+      
+    }
+    .payment{
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+    .enroll{
+      background-color: #E5331C;
+      color: white;
+      text-align: center;
+      width: 40%;
+      margin: auto;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .ma{
+      font-weight: bold;
+    }
+    .k1{
+      font-size: 1.375rem;
+      font-weight: bold;
+      color: #B85E2C;
+    }
+    .mon{
+      font-size: 0.81rem;
+      color: #184687;
+    }
+    .payment:hover{
+      border: 2px solid #E5331C;
+    }
+
+
+
+
+
+
+
+
 
 
     #fifth{
       background-color: #EDF2F8;
       font-family: "Inter", sans-serif;
+      padding-bottom: 20px;
     }
     .signup{
       text-align: center;
@@ -445,7 +503,7 @@
       color: white;
       background-color: #2C66B8;
       width: 100px;
-      font-size: 12px;
+      font-size: 1.125rem;
       padding: 5px;
       text-align: center;
       margin: auto;
@@ -455,7 +513,7 @@
 
     .box-sign{
       background-color: white;
-      width: 300px;
+      width: 70%;
       margin: auto;
       padding: 10px;
       margin-top: 10px;
@@ -464,12 +522,12 @@
       box-shadow: 5px 5px 10px #2C66B8;
     }
     .lorem{
-      font-size: 12px;
+      font-size: 0.831rem;
       color: #565454;
 
     }
     .signupp{
-      font-size: 17px;
+      font-size: 1.123rem;
     }
 
 
@@ -495,23 +553,26 @@
 
     .back{
       display: flex;
-      width: 262px;
+      width: 100%;
       
     }
 
     #name{
-      font-size: 10px;
+      font-size: 1rem;
       font-weight: 500;
       margin: 0;
     }
     #small-name{
-      font-size: 8px;
+      font-size: 0.81rem;
+      padding: 0;
+      margin-top: -10px;
+      display: none;
       
     }
 
 
     #paragraph{
-      font-size: 9px;
+      font-size: 0.81rem;
       font-family: "Inter", sans-serif;
       color: #252525;
     }
@@ -560,53 +621,7 @@
       border-radius: 3px;
     }
 
-    #six{
-      background-image: url(/img/background.png);
-      padding: 5px;
-      margin-top: 20px;
     
-    }
-
-    #container-six{
-      background-color: white;
-      border-radius: 20px;
-      width: 312px;
-      padding: 20px;
-      margin: auto;
-      font-family: "Inter", sans-serif;
-    }
-    .sup{
-      margin: 0;
-      font-size: 22px;
-      font-weight: 500;
-    }
-    .guide{
-      margin: 0;
-      font-size: 8.85px;
-    }
-    .input{
-      width: 90%;
-      padding: 5px;
-      border: 1px solid #545252;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-    .input-large{
-      width: 90%;
-      padding: 5px;
-      border: 1px solid #545252;
-      border-radius: 5px;
-      margin-top: 10px;
-      height: 67px;
-    }
-
-    button{
-      background-color: #184687;
-      color: white;
-      padding: 5px;
-      margin-top: 10px;
-    }
 
 
     footer{
@@ -622,6 +637,7 @@
       justify-content: space-between;
       font-family: "Inika", serif;
       width: 80%;
+      font-size: 0.81rem;
     }
 
     .mea-footer{
@@ -642,7 +658,7 @@
       font-weight: 500;
     }
     .call{
-      font-size: 14px;
+      font-size: 0.87rem;
       margin: 0;
     }
 
@@ -652,7 +668,7 @@
     }
 
     .exp{
-      font-size: 20px;
+      font-size: 1.123rem;
     }
     .footer-news{
       text-align: center;
@@ -662,7 +678,7 @@
       padding: 5px;
     }
     #letter{
-      font-size: 20px;
+      font-size: 1.125rem;
     }
     #subscribe-footer{
       background-color: #FF6551;
