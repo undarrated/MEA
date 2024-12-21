@@ -63,6 +63,9 @@
         background-color: #FF6551;
         color: white;
     }
+    .group-pixel{
+      display: none;
+    }
 
 
 
