@@ -587,6 +587,10 @@
       display: none;
     }
 
+    .group-pixel{
+      display: none;
+    }
+
     .scroller-third{
       display: flex;
       justify-content: flex-end;
