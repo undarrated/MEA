@@ -237,6 +237,11 @@
       background-color: #F6F6F6;
     }
 
+    .flex{
+      background-color: #F6F6F6;
+
+    }
+
     #container-1{
       display: flex;
       justify-content: space-around;
