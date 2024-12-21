@@ -105,9 +105,18 @@
     .scrollable-container {
         overflow-x: auto;
         white-space: nowrap;
-        
+        background-color: #FFFAF5;
       }
-      
+
+    .scrollable-container-two{
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    .scrollable-container-one {
+      background-color: #EDF2F8;
+      overflow-x: auto;
+        white-space: nowrap;
+    } 
       .scrollable-content {
         display: flex;
         
@@ -115,7 +124,7 @@
 
       .scrollable-content-one {
         display: flex;
-        background-color: #FFFAF5;
+        
       }
       
       .item {
