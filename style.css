@@ -52,7 +52,7 @@
     #first-section{
         text-align: center;
         padding: 10px;
-        background-image: url(/img/mobile-bgb.png);
+        background-image: url(./img/mobile-bgb.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
