@@ -50,13 +50,13 @@
 
 
     #first-section{
-        background-color: #EDF2F8;
         text-align: center;
         padding: 10px;
-        background-image: url(/img/background.png);
+        background-image: url(/img/);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        
     }
     .p-one{
         font-size: 1.75rem;
