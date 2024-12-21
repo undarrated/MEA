@@ -113,8 +113,8 @@
         white-space: nowrap;
       }
     .scrollable-container-one {
-      background-color: #EDF2F8;
-      overflow-x: auto;
+       background-color: #EDF2F8;
+       overflow-x: auto;
         white-space: nowrap;
     } 
       .scrollable-content {
