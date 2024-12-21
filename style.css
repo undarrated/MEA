@@ -110,6 +110,7 @@
       
       .scrollable-content {
         display: flex;
+        
       }
 
       .scrollable-content-one {
@@ -234,11 +235,11 @@
       display: flex;
       justify-content: space-around;
       margin-top: 20px;
-      background-color: #F6F6F6;
+      
     }
 
-    .flex{
-      background-color: #F6F6F6;
+    #flex{
+      background-color: #FFFAF5;
 
     }
 
@@ -247,7 +248,7 @@
       justify-content: space-around;
       margin-top: 100px;
       margin-bottom: 50px;
-      background-color: #F6F6F6;
+      
     }
     .ins{
       width: 120px;
