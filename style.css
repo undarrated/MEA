@@ -159,7 +159,7 @@
         
       }
       
-      .item {
+      .item, .item-blue, .item-brown {
         display: inline-block;
         padding: 10px;
         background-color: white;
@@ -169,7 +169,14 @@
       
       
       .item:hover{
-        border: 1px solid black;
+        box-shadow: 5px 5px 10px #f06755;
+      }
+
+      .item-blue:hover{
+        box-shadow: 5px 5px 10px #2C66B8;
+      }
+      .item-brown:hover{
+        box-shadow: 5px 5px 10px #B85E2C;
       }
 
       .maths{
@@ -205,6 +212,20 @@
       .orange{
         padding: 2px;
         background-color: #FF6551;
+        border: none;
+        width: 53px;
+        margin: 0;
+      }
+      .hr-blue{
+        padding: 2px;
+        background-color: #2C66B8;
+        border: none;
+        width: 53px;
+        margin: 0;
+      }
+      .hr-brown{
+        padding: 2px;
+        background-color: #B85E2C;
         border: none;
         width: 53px;
         margin: 0;
@@ -256,6 +277,10 @@
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       width: 100%;
       font-size:  0.875rem;
+    }
+
+    .item-one:hover{
+      box-shadow: 5px 5px 10px #2C66B8;
     }
 
     .set-text{
