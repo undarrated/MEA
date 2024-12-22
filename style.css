@@ -855,6 +855,10 @@
       white-space: nowrap;
       
     }
+    .scrollable-container-one{
+      overflow-x: auto;
+        white-space: nowrap;
+    }
     
     .scrollable-content {
       display: flex;
@@ -866,7 +870,7 @@
 
     }
     
-    .item {
+    .item, .item-blue, .item-brown {
       display: inline-block;
       padding: 20px;
       background-color: white;
@@ -893,24 +897,27 @@
     }
 
     .maths{
-      width: 53px;
-      height: 53px;
+      width: 40px;
+      font-size: 20px;
+      padding: 10px;
       background-color: #FF6551;
       border-radius: 5px;
       text-align: center;
     }
 
     .blue{
-      width: 53px;
-      height: 53px;
+      width: 40px;
+      font-size: 20px;
+      padding: 10px;
       background-color: #2C66B8;
       border-radius: 5px;
       text-align: center;
     }
 
     .brown{
-      width: 53px;
-      height: 53px;
+      width: 40px;
+      font-size: 20px;
+      padding: 10px;
       background-color: #B85E2C;
       border-radius: 5px;
       text-align: center;
@@ -920,13 +927,27 @@
       font-size: 20px;
     }
     .orange{
-      padding: 1px;
+      padding: 2px;
       background-color: #FF6551;
       border: none;
       width: 53px;
       margin: 0;
     }
-
+    
+    .hr-blue{
+      padding: 2px;
+      background-color: #2C66B8;
+      border: none;
+      width: 53px;
+      margin: 0;
+    }
+    .hr-brown{
+      padding: 2px;
+      background-color: #B85E2C;
+      border: none;
+      width: 53px;
+      margin: 0;
+    }
     .solve{
       font-size: 12px;
       font-family: "Inter", sans-serif;
@@ -1104,6 +1125,10 @@
     font-weight: bold;
     color: #565454;
     margin-top: 2px;
+  }
+
+  .row{
+    display: none;
   }
 
 
