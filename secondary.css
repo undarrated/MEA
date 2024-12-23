@@ -61,19 +61,24 @@
         background-attachment: fixed;
         
     }
+    .space{
+        margin-top: 100px;
+        
+    }
     .p-one{
-        font-size: 1.375rem;
-        font-family: "Inria Sans", sans-serif;
-        font-weight: bolder;
-        color: #252B42;
+        font-size: 1.875rem;
+        font-family: "Inika", serif;
+        font-weight: 1000;
+        color: black;
     }
     .p-two{
         font-size: 1.125rem;
-        color: #B85E2C;
+        color: #021228;
         font-family: "Inika", serif;
         width: 80%;
         margin: auto;
         font-weight: 400;
+        font-weight: bold;
     }
 
     .box-explore{
@@ -91,9 +96,10 @@
         font-size: 1.125rem;
         color: white;
         padding: 5px;
-        background-color: #FF6551;
+        background-color: #2C66B8;
         margin-bottom: 10px;
         width: 100%;
+        border-radius: 5px;
     }
     .ex:hover{
         background-color: white;
