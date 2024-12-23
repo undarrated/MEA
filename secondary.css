@@ -62,7 +62,7 @@
         
     }
     .space{
-        margin-top: 100px;
+        margin-top: 50px;
         
     }
     .p-one{
@@ -132,6 +132,42 @@
     .success-mini{
         margin-top: -25px;
         font-weight: 50;
+        font-family: "Inria Sans", sans-serif;
+    }
+    .success-container{
+        font-size: 0.81rem;
+        font-family: "Inria Sans", sans-serif;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .k10{
+        font-size: 1.125rem;
+        font-weight: bolder;
+        margin: 0;
+    }
+    .nos{
+        margin: 0;
+    }
+    .cont{
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+
+
+
+
+    #section-three{
+        background-color: #EDF2F8;
+        text-align: center;
+    }
+    .scrollable-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        background-color: #FFFAF5;
+        padding-bottom: 40px;
     }
 
 }
