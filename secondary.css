@@ -296,6 +296,9 @@
         font-family: "Inria Sans", serif;
         padding: 2px;
     }
+    .offer{
+        text-align: center;
+    }
     .Jamb{
         background-color: white;
         display: flex;
