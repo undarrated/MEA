@@ -304,6 +304,7 @@
         padding: 10px;
         border-radius: 10px;
         border: 1px solid black;
+        margin-bottom: 20px;
     }
     .Jamb:hover{
         border: 2px solid #2C66B8;
