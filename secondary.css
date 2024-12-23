@@ -169,5 +169,11 @@
         background-color: #FFFAF5;
         padding-bottom: 40px;
     }
+    .scrollable-content{
+        display: flex;
+    }
+    .circle{
+        background-color: #2C66B8;
+    }
 
 }
