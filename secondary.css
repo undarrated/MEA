@@ -287,4 +287,16 @@
         color: #2C66B8;
     }
 
+
+
+
+
+    #section-four{
+        background-color: #EDF2F8;
+    }
+    .jamb{
+        background-color: white;
+        display: flex;
+    }
+
 }
