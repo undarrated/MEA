@@ -162,7 +162,7 @@
 
 
     #section-three{
-        background-color: #EDF2F8;
+        background-color: #FFFAF5;
         text-align: center;
         padding: 5px;
     }
@@ -293,10 +293,34 @@
 
     #section-four{
         background-color: #EDF2F8;
+        font-family: "Inria Sans", serif;
+        padding: 2px;
     }
-    .jamb{
+    .Jamb{
         background-color: white;
         display: flex;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    .Jamb:hover{
+        border: 2px solid #2C66B8;
+    }
+  
+    .k-j{
+        font-size: 1.25rem;
+        font-weight: 900;
+        margin: 0;
+    }
+    .brains{
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    .prac{
+        font-size: 0.85rem;
+        margin: 0;
     }
 
 }
