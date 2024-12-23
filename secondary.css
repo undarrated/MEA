@@ -96,7 +96,7 @@
         font-size: 1.125rem;
         color: white;
         padding: 5px;
-        background-color: #2C66B8;
+        background-color: #26335D;
         margin-bottom: 10px;
         width: 100%;
         border-radius: 5px;
@@ -110,6 +110,27 @@
     }
     .group{
         display: none;
+    }
+
+
+
+
+
+    #section-two{
+        background-color: #26335D;
+        color: white;
+        text-align: center;
+        font-size: 0.853rem;
+        padding: 5px;
+        font-family: "Inika", serif;
+    }
+    .rem-success{
+        font-size: 1.375rem;
+        font-family: "Inconsolata", serif;
+    }
+    .success-mini{
+        margin-top: -25px;
+        font-weight: 100;
     }
 
 }
