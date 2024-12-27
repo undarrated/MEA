@@ -64,4 +64,24 @@
         border-radius: 50%;
         height: 30px;
     }
+    .albert{
+        display: flex;
+        margin-left: 20px;
+    }
+    .hrr{
+        height: 35px;
+        padding: 3px;
+        background-color: #8F8E8E;
+    }
+    #italy{
+        font-style: italic;
+        margin: 0;
+        margin-left: 10px;
+    }
+    #einstein{
+        color: #2C59C0;
+        font-weight: 700;
+        text-align: end;
+        margin: 0;
+    }
 }
