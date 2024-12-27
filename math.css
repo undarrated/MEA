@@ -39,4 +39,10 @@
         margin-top: -10px;
         margin-left: 6px;
     }
+    .halfsection{
+        font-family: "Inika", serif;
+    }
+    .imghalf{
+        background-image: url(./img/);
+    }
 }
