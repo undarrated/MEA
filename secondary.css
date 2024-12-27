@@ -830,7 +830,6 @@ margin-top: 10px;
   font-family: "Inria Sans", serif;
   background-color: white;
   padding: 10px;
- 
 }
 .container{
   display: none;
@@ -847,11 +846,15 @@ margin-top: 10px;
   border-right: 10px solid #2C66B8;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 60px;
 }
 .girlpay{
   position: absolute;
-  top: -50px;
+  top: -90px;
   left: -5px;
+}
+#girly{
+  margin-left: 100px;
 }
 
 #annual{
@@ -899,12 +902,17 @@ margin-top: 10px;
 }
 .iam{
   background-color: white;
-  width: 70%;
+  width: 50%;
   position: absolute;
   top: -25px;
   border-radius: 20px;
   border: 2px solid black;
   padding: 10px;
+}
+.edit{
+  position: absolute;
+  left: 420px;
+  top: -30px;
 }
 #score{
   font-size: 1.5rem;
@@ -923,8 +931,9 @@ margin-top: 10px;
   border-bottom: 2px solid black; 
   border-right: 2px solid black; 
   border-radius: 5px;
-  width: 20%;
+  width: 30%;
   padding: 5px;
+  text-align: center;
 }
 
 
