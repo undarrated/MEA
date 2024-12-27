@@ -27,9 +27,16 @@
         font-weight: 200;
         color: #D4D2D2;
     }
+    #yusufs{
+        display: flex;
+    }
     .yusuf-mini{
-        background-color: yellowgreen;
+        background-image: url(./img/yusufmini.png);
         width: 62px;
         height: 69.13px;
+    }
+    .up{
+        margin-top: -10px;
+        margin-left: 6px;
     }
 }
