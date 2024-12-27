@@ -341,11 +341,13 @@
     .container {
         font-family: "Inria Sans", serif;
         background-color: white;
+        padding: 10px;
         overflow-x: auto;
         white-space: nowrap;
-        padding: 10px;
-       
       }
+    .container-big{
+      display: none;
+    }
       #containerr{
         display: flex;
       }
@@ -827,8 +829,6 @@ margin-top: 10px;
 .container-big {
   font-family: "Inria Sans", serif;
   background-color: white;
-  overflow-x: auto;
-  white-space: nowrap;
   padding: 10px;
  
 }
@@ -836,10 +836,12 @@ margin-top: 10px;
   display: none;
 }
 #containerr{
-  display: flex;
+  
+  
 }
 .overlapping-div {
   color: white;
+  position: relative;
   width:80%;
   background-color: #AD460C;
   margin-left: 20px;
@@ -849,6 +851,7 @@ margin-top: 10px;
   border-right: 10px solid #2C66B8;
   border-top: 20px solid #AD460C;
   border-left: 20px solid #AD460C;
+  display: flex;
 }
 
 #annual{
