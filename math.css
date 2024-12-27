@@ -40,9 +40,28 @@
         margin-left: 6px;
     }
     .halfsection{
+        padding: 20px;
+        font-family: "Inria Sans", sans-serif;
+    }
+    #description{
         font-family: "Inika", serif;
+        font-size: 1.75rem;
+        margin: 0;
     }
     .imghalf{
-        background-image: url(./img/);
+        background-image: url(./img/teacher.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 30vh; /* Set the height to 100% of the viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #play{
+        background-color: rgba(255, 255, 255, 0.568);
+        padding: 30px;
+        border-radius: 50%;
+        height: 30px;
     }
 }
