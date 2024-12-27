@@ -946,15 +946,22 @@ footer{
   color: white;
   font-family: "Inter", sans-serif;
   margin: 0;
-  padding: 15px 30px;
+  padding: 15px;
+}
+.com{
+  margin-top: 25px;
 }
 
+.threee{
+  display: flex;
+  justify-content: space-around;
+}
 #footer-explore{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Inika", serif;
-  width: 80%;
-  font-size: 0.81rem;
+  width: 600px;
+  font-weight: 300;
 }
 
 .mea-footer{
@@ -975,7 +982,7 @@ footer{
   font-weight: 500;
 }
 .call{
-  font-size: 0.87rem;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -985,25 +992,39 @@ footer{
 }
 
 .exp{
-  font-size: 1.123rem;
+  font-size: 25px;
 }
 .footer-news{
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
 }
 #emaill{
-  width: 80%;
-  padding: 5px;
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
 }
 #letter{
-  font-size: 1.125rem;
+  font-size: 20px;
+  margin: 0;
+  margin-left: 50px;
+  
 }
 #subscribe-footer{
   background-color: #FF6551;
   color: white;
-  margin-top: 5px;
-  padding: 3px;
   width: 100px;
-  margin: 10px auto;
+  height: 25px;
+  border-radius: 4px;
+  padding: 3px;
+}
+.ftn{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
 }
 
 
@@ -1044,13 +1065,18 @@ body{
     color: #B85E2C;
 }
 .dropdown{
-    padding: 10px;
-    margin-right: 15px;
-    margin-top: 4px;
-}
-.dropdown-desk, .sign-desk{
     display: none;
 }
+.dropdown-desk{
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  width: 500px;
+  font-weight: 300;
+  padding: 10px;
+  cursor: pointer;
+}
+
 
 
 
@@ -1448,15 +1474,22 @@ footer{
   color: white;
   font-family: "Inter", sans-serif;
   margin: 0;
-  padding: 15px 30px;
+  padding: 15px;
+}
+.com{
+  margin-top: 25px;
 }
 
+.threee{
+  display: flex;
+  justify-content: space-around;
+}
 #footer-explore{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Inika", serif;
-  width: 80%;
-  font-size: 0.81rem;
+  width: 600px;
+  font-weight: 300;
 }
 
 .mea-footer{
@@ -1477,7 +1510,7 @@ footer{
   font-weight: 500;
 }
 .call{
-  font-size: 0.87rem;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -1487,25 +1520,39 @@ footer{
 }
 
 .exp{
-  font-size: 1.123rem;
+  font-size: 25px;
 }
 .footer-news{
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
 }
 #emaill{
-  width: 80%;
-  padding: 5px;
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
 }
 #letter{
-  font-size: 1.125rem;
+  font-size: 20px;
+  margin: 0;
+  margin-left: 50px;
+  
 }
 #subscribe-footer{
   background-color: #FF6551;
   color: white;
-  margin-top: 5px;
-  padding: 3px;
   width: 100px;
-  margin: 10px auto;
+  height: 25px;
+  border-radius: 4px;
+  padding: 3px;
+}
+.ftn{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
 }
 
 }
