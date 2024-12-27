@@ -416,6 +416,9 @@
         border: 2px solid black;
         padding: 10px;
       }
+      .edit{
+        display: none;
+      }
       #score{
         font-size: 1.5rem;
         font-weight: bold;
@@ -912,7 +915,7 @@ margin-top: 10px;
 .edit{
   position: absolute;
   left: 420px;
-  top: -30px;
+  top: -80px;
 }
 #score{
   font-size: 1.5rem;
