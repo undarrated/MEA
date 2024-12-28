@@ -18,6 +18,9 @@
         font-size: 1rem;
         font-weight: bold;
     }
+    #home{
+        color: #8F8E8E;
+    }
     .bold{
         font-size: 1.75rem;
     }
@@ -119,25 +122,25 @@
         font-size: 1.375rem;
         font-weight: bold;
       }
+      #footer{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Inter", sans-serif;
+      }
 
-      .orange{
-        height: 90px;
-        background-color: #FF5100;
-        width: 20px;
-        margin-right: 10px;
-      }
-      .white{
-        height: 70px;
-        background-color: #D4D2D2;
-        width: 20px;
-        margin-right: 10px;
-      }
-      .whitee{
-        height: 90px;
-        background-color: #D4D2D2;
-        width: 20px;
+      .levell{
+        font-size: 1.125rem;
+        
+        
       }
       .flex{
         display: flex;
+      }
+      .hi{
+        height: 100px;
+      }
+      .ten{
+        font-size: 1.8rem;
+        font-weight: bold;
       }
 }

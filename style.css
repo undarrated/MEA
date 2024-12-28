@@ -720,6 +720,9 @@
     .scrollable-content-sample{
       display: none;
     }
+    a{
+      text-decoration: none;
+    }
 }
 
 
