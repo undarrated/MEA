@@ -25,8 +25,8 @@
         padding: 20px;
     }
     .set{
-        font-size: 1.85rem;
-        font-weight: 500;
+        font-size: 1.25rem;
+        font-weight: bold;
         font-family: "Inika", serif;
     }
 
@@ -36,12 +36,49 @@
     }
     .yusuf-mini{
         background-image: url(./img/alpha.png);
-        width: 84px;
+        width: 74px;
         height: 88px;
     }
     .up{
         margin-top: -10px;
         margin-left: 6px;
+    }
+    .name{
+        font-size: 1.125rem;
+        font-family: "Inter", sans-serif;
+    }
+    .para{
+        font-family: "Inria Sans", sans-serif;
+    }
+    .next{
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+    }
+    .theory{
+        font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+    }
+    .setop{
+        text-decoration: dotted;
+        color: #8F8E8E;
+    }
+    .footer{
+        font-family: "Inter", sans-serif;
+        text-align: center;
+    }
+
+    .download{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 30px;
+        padding: 20px;
+        font-size: 1.3rem;
+        width: 40%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .download:hover{
+        background-color: #EF601D;
+        color: white;
     }
 
 
