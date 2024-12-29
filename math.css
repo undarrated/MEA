@@ -373,12 +373,16 @@
         justify-content: center;
         align-items: center;
     }
+    .imghalf:hover{
+        border: 2px solid #2C59C0;
+    }
     #play{
         background-color: rgba(255, 255, 255, 0.568);
         padding: 30px;
         border-radius: 50%;
         height: 30px;
     }
+    
     .albert{
         display: flex;
         margin-left: 20px;
