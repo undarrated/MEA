@@ -23,11 +23,16 @@
 
     .section{
         padding: 20px;
+        
     }
     .set{
         font-size: 1.25rem;
         font-weight: bold;
         font-family: "Inika", serif;
+    }
+
+    #separate{
+        margin-top: 20px;
     }
 
 
@@ -36,8 +41,8 @@
     }
     .yusuf-mini{
         background-image: url(./img/alpha.png);
-        width: 74px;
-        height: 88px;
+        width: 70.64px;
+        height: 74px;
     }
     .up{
         margin-top: -10px;
@@ -62,6 +67,9 @@
         text-decoration: dotted;
         color: #8F8E8E;
     }
+    .setop:hover{
+        color: #EF601D;
+    }
     .footer{
         font-family: "Inter", sans-serif;
         text-align: center;
@@ -82,4 +90,101 @@
     }
 
 
+}
+
+@media screen and (min-width: 787px) and (max-width: 999px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        padding: 20px;
+        font-family: "Inter", sans-serif;
+        
+    }
+    .home{
+        display: flex;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    #home{
+        color: #8F8E8E;
+    }
+
+    .section{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .main{
+       width: 60%;
+    }
+    .set{
+        font-size: 1.25rem;
+        font-weight: bold;
+        font-family: "Inika", serif;
+    }
+    #video{
+        padding: 0 20px;
+    }
+
+    #separate{
+        margin-top: 20px;
+        width: 40%;
+    }
+
+
+    #yusufs{
+        display: flex;
+    }
+    .yusuf-mini{
+        background-image: url(./img/alpha.png);
+        width: 70.64px;
+        height: 74px;
+    }
+    .up{
+        margin-top: -10px;
+        margin-left: 6px;
+    }
+    .name{
+        font-size: 1.125rem;
+        font-family: "Inter", sans-serif;
+    }
+    .para{
+        font-family: "Inria Sans", sans-serif;
+    }
+    .next{
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+    }
+    .theory{
+        font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+    }
+    .setop{
+        text-decoration: dotted;
+        color: #8F8E8E;
+    }
+    .setop:hover{
+        color: #EF601D;
+    }
+    .footer{
+        font-family: "Inter", sans-serif;
+        text-align: center;
+    }
+
+    .download{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 30px;
+        padding: 20px;
+        font-size: 1.3rem;
+        width: 40%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .download:hover{
+        background-color: #EF601D;
+        color: white;
+    }
 }
