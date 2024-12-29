@@ -409,6 +409,10 @@
     .setop{
         text-decoration: dotted;
         color: #8F8E8E;
+        cursor: pointer;
+    }
+    .setop:hover{
+        color: #2C59C0;
     }
     .payment{
         background-color: #2C59C0;
