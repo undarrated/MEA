@@ -9,6 +9,9 @@
         font-family: "Inter", sans-serif;
         margin: 0;
     }
+    header, .bb{
+        padding: 10px;
+    }
     .round{
         background-color: white;
         display: flex;
