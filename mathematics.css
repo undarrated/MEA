@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@media screen and (max-width: 786px) {
+    body{
+        padding: 0;
+        background-color: #DF4C07;
+        font-family: "Inter", sans-serif;
+        margin: 0;
+    }
+    .round{
+        background-color: white;
+        display: flex;
+        width: 98%;
+        margin: auto;
+        border-radius: 30px;
+        justify-content: space-around;
+    }
+    .maths{
+        color: white;
+        font-size: 1.85rem;
+        font-family: "Inria Sans", sans-serif;
+        text-align: center;
+    }
+    .exp{
+        color: #EAE9E9;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .first{
+        background-color: white;
+        padding: 10px;
+    }
+    .benefit{
+        margin: auto;
+        background-color: #d1d1d1;
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        
+    }
+    .master{
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .second{
+        padding: 10px;
+    }
+    .calculus{
+        background-color: white;
+        width: 90%;
+        border-radius: 30px;
+        padding: 10px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .pp{
+        font-size: 0.85rem;
+    }
+    .cal{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #26335D;
+    }
+
+    .third{
+        background-color: white;
+        padding: 10px;
+    }
+    .third .calculus{
+        background-color: #DF4C07;
+        color: white;
+        padding: 10px;
+    }
+}
