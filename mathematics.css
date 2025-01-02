@@ -80,3 +80,7 @@
         padding: 10px;
     }
 }
+
+@media screen and (min-width: 787px) and (max-width: 999px) {
+    
+}
