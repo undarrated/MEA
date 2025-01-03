@@ -122,4 +122,70 @@
         margin: auto;
         padding: 10px;
       }
+
+
+      footer{
+        background-color: #26335D;
+        color: white;
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 15px 30px;
+      }
+  
+      #footer-explore{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Inika", serif;
+        width: 80%;
+        font-size: 0.81rem;
+      }
+  
+      .mea-footer{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
+      }
+  
+      .color-brown{
+        color: #B85E2C;
+      }
+  
+      .color-blue{
+        color: #2C66B8;
+      }
+      .footer-us{
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .call{
+        font-size: 0.87rem;
+        margin: 0;
+      }
+  
+      .brands{
+        font-size: 20px;
+        margin-top: 10px;
+      }
+  
+      .exp{
+        font-size: 1.123rem;
+      }
+      .footer-news{
+        text-align: center;
+      }
+      #emaill{
+        width: 80%;
+        padding: 5px;
+      }
+      #letter{
+        font-size: 1.125rem;
+      }
+      #subscribe-footer{
+        background-color: #FF6551;
+        color: white;
+        margin-top: 5px;
+        padding: 3px;
+        width: 100px;
+        margin: 10px auto;
+      }
 }
