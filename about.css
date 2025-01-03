@@ -15,12 +15,14 @@
       background-color: #F6F6F6;
       margin: 0;
       line-height: 1.6;
+      font-family: "Inter", sans-serif;
     }
 
     .space{
       width: 80%;
       margin: auto;
     }
+
 
     .name{
         font-size: 1.75rem;
@@ -38,4 +40,73 @@
         margin-right: 15px;
         margin-top: 4px;
     }
+
+    .first, .second{
+        padding: 10px;
+    }
+    .second{
+        padding: 10px;
+        color: white;
+        background-color: #26335D;
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+
+    .scrollable-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        background-color: #26335D;
+        padding-bottom: 40px;
+
+      }
+    .scrollable-content-one {
+        display: flex;
+        
+      }
+      .item {
+        display: inline-block;
+        padding: 10px;
+        background-color: #26335D;
+        margin: 10px 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      .hero{
+        text-align: center;
+        font-family: "Inter", sans-serif;
+      }
+      .orange{
+        font-size: 0.85rem;
+        color: #FF5100;
+        margin: 0;
+        padding: 0;
+      }
+      .blue{
+        color: #26335D;
+        font-family: "Inika", serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+      }
+      .focus{
+        color: #FF5100;
+        font-family: "Inika", serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+      }
+      span{
+        color: #FF5100;
+      }
+      .meet{
+        text-align: center;
+        font-family: "Inika", serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+      }
 }
