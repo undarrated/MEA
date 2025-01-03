@@ -76,8 +76,11 @@
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       }
       .hero{
-        text-align: center;
         font-family: "Inter", sans-serif;
+      }
+      .design{
+        font-weight: 200;
+        margin: 0;
       }
       .orange{
         font-size: 0.85rem;
