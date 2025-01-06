@@ -111,7 +111,24 @@
         font-weight: bold;
         margin-bottom: 10px;
     }
+    .third{
+        padding: 0 20px;
+    }
+    .h1{
+        font-size: 1.5rem;
+        font-family: "Inknut Antiqua", serif;
+        font-weight: bold;
+        margin: 0;
+    }
     .blog{
         background-color: white;
+        width: 309px;
+        font-weight: 700;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .pub{
+        font-weight: 400;
+        font-size: 0.85rem;
     }
 }
