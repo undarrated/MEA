@@ -46,6 +46,7 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
+        padding-top: 20px;
     }
     .round{
         border: 1px solid black;
@@ -66,14 +67,51 @@
         margin-bottom: 10px;
     }
 
-
-
-
-
+    .scrollable-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        color: black;
+        padding: 20px;
+      }
+    .scrollable-content-one {
+        display: flex;
+    }
 
     .item{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        background-image: url(./img/folder.png);
+        background-repeat: no-repeat;
         width: 313px;
         height: 247.5px;
-        background-color: aqua;
+    }
+    .uno{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        color: #6D3110;
+        font-weight: bold;
+    }
+    .last{
+        display: flex;
+        justify-content: space-around;
+    }
+    #last{
+        border: 1px solid #6D3110;
+        background-color: #FBF1E7;
+        width: 30%;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .blog{
+        background-color: white;
     }
 }
