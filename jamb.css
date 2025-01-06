@@ -91,6 +91,46 @@
         width: 313px;
         height: 247.5px;
     }
+    .hero-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        background-image: url(./img/folder-blue.png);
+        background-repeat: no-repeat;
+        width: 313px;
+        height: 247.5px;
+    }
+    .hero-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        background-image: url(./img/folder-greem.png);
+        background-repeat: no-repeat;
+        width: 313px;
+        height: 247.5px;
+    }
+    .hero-three{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        background-image: url(./img/folder-green.png);
+        background-repeat: no-repeat;
+        width: 313px;
+        height: 247.5px;
+    }
+    .hero-four{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        background-image: url(./img/folder-yellow.png);
+        background-repeat: no-repeat;
+        width: 313px;
+        height: 247.5px;
+    }
     .uno{
         display: flex;
         justify-content: space-around;
@@ -98,6 +138,14 @@
         color: #6D3110;
         font-weight: bold;
     }
+    .uno-one{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        font-weight: bold;
+    }
+    
     .last{
         display: flex;
         justify-content: space-around;
