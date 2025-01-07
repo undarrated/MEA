@@ -55,20 +55,26 @@
     }
     .img{
         background-image: url(./img/hausa.png);
-        max-width: 538px;
-        height: 552px;
+        max-width: 415px;
+        height: 425.8px;
+        margin: auto;
     }
 
     .cont-mont{
         padding: 0 20px;
+        font-family: "Montserrat", serif;
     }
     .mont{
-        font-family: "Montserrat", serif;
         font-size: 1rem;
     }
     #mont{
-        font-family: "Montserrat", serif;
         font-weight: bold;
         font-size: 1.75rem;
+    }
+    .more{
+        border: 1px solid black;
+        padding: 10px;
+        width: 30%;
+        text-align: center;
     }
 }
