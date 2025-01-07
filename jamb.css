@@ -565,32 +565,46 @@
     }
     .black{
         background-color: #B85E2C;
-        font-size: 2rem;
+        font-size: 1rem;
         padding: 10px;
         color: #D9D9D9;
-        height: 50px;
+        height: 30px;
         margin-right: 5px;
     }
     .p{
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: bold;
     }
     #p{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         margin-top: 5px;
     }
     .prep{
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: "Inika", serif;
         font-weight: bold;
         color: #6D3110;
-        line-height: 50px;
+        line-height: 40px;
     }
 
     .first{
         padding: 10px 20px;
         display: flex;
+        justify-content: space-evenly;
+    }
+    .head{
+        margin-top: 40px;
+    }
+    .text-head{
+       width: 70%; 
+       color: #6D3110;
+       font-weight: bold;
+       padding-left: 10px;
+       margin-top: 30px;
+    }
+    .img-head{
+        margin-bottom: -20px;
     }
 
 
@@ -601,18 +615,12 @@
         display: flex;
         
     }
-    .img-head{
-    
-    }
-    .text-head{
-        
-    }
     .flex{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        padding-top: 20px;
+        padding-top:  20px;
     }
     .round{
         border: 1px solid black;
@@ -746,7 +754,7 @@
         margin-bottom: 10px;
     }
     .third{
-        padding: 0 20px;
+        padding: 10px 20px;
     }
     .blog-container{
         display: flex;
@@ -769,5 +777,16 @@
     .pub{
         font-weight: 400;
         font-size: 0.85rem;
+    }
+    .dropdown{
+        display: none;
+    }
+    .dropdown-desk{
+        display: block;
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        font-weight: bold;
+        color: #6D3110;
     }
 }
