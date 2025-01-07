@@ -39,6 +39,27 @@
     a{
         text-decoration: none;
     }
+    .dropdown-desk{
+        display: none;
+    }
 
-    .first
+    .first{
+        background-image: url(./img/donation.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 50vh; /* Set the height to 100% of the viewport height */
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #bridge{
+        width: 60%;
+    }
+    .bridge{
+        font-size: 2rem;
+        margin-top: 20px;
+        font-weight: bold;
+    }
 }
