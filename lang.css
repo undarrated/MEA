@@ -77,4 +77,251 @@
         width: 30%;
         text-align: center;
     }
+    .hide-img{
+        display: none;
+    }
+    .dropdown-desk{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 787px) and (max-width: 999px) {
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding-top: 5px;
+    }
+
+    body{
+      background-color: #F6F6F6;
+      margin: 0;
+      line-height: 1.6;
+      font-family: "Inter", sans-serif;
+    }
+
+    .space{
+      width: 80%;
+      margin: auto;
+    }
+
+
+    .name{
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: white;
+        font-family: "Inter", sans-serif;
+        margin-left: 30px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .dropdown-desk{
+        display: flex;
+        color: white;
+        width: 50%;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .hide-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text{
+        font-family: "Istok Web", serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    .speak{
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    .meet{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .img{
+        background-image: url(./img/hausa.png);
+        max-width: 415px;
+        height: 425.8px;
+        margin: auto;
+    }
+    #meet{
+        display: none;
+    }
+    .imgg{
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+    .imgg-mid{
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .cont-mont{
+        padding: 0 40px;
+        font-family: "Montserrat", serif;
+        width: 30%;
+    }
+    .cont-mont-mid{
+        padding: 0 40px;
+        font-family: "Montserrat", serif;
+        width: 30%;
+        text-align: end;
+    }
+    .mont{
+        font-size: 1rem;
+    }
+    #mont{
+        font-weight: bold;
+        font-size: 1.75rem;
+    }
+    .more{
+        border: 1px solid black;
+        padding: 10px;
+        width: 40%;
+        text-align: center;
+    }
+    .more-mid{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        width: 40%;
+        margin-left: 120px;
+    }
+}
+
+@media (min-width: 1000px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding-top: 5px;
+    }
+
+    body{
+      background-color: #F6F6F6;
+      margin: 0;
+      line-height: 1.6;
+      font-family: "Inter", sans-serif;
+    }
+
+    .space{
+      width: 80%;
+      margin: auto;
+    }
+
+
+    .name{
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: white;
+        font-family: "Inter", sans-serif;
+        margin-left: 30px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .dropdown-desk{
+        display: flex;
+        color: white;
+        width: 50%;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .hide-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text{
+        font-family: "Istok Web", serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    .speak{
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    .meet{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .img{
+        background-image: url(./img/hausa.png);
+        max-width: 415px;
+        height: 425.8px;
+        margin: auto;
+    }
+    #meet{
+        display: none;
+    }
+    .imgg{
+        margin-top: 20px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+    .imgg-mid{
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .cont-mont{
+        padding: 0 40px;
+        font-family: "Montserrat", serif;
+        width: 30%;
+    }
+    .cont-mont-mid{
+        padding: 0 40px;
+        font-family: "Montserrat", serif;
+        width: 30%;
+        text-align: end;
+    }
+    .mont{
+        font-size: 1rem;
+    }
+    #mont{
+        font-weight: bold;
+        font-size: 1.75rem;
+    }
+    .more{
+        border: 1px solid black;
+        padding: 10px;
+        width: 40%;
+        text-align: center;
+    }
+    .more-mid{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        width: 40%;
+        margin-left: 120px;
+    }
 }
