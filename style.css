@@ -451,7 +451,7 @@
       padding-bottom: 20px;
       
     }
-    .payment{
+    .payment, .paymenttwo{
       background-color: white;
       padding: 10px;
       margin-bottom: 30px;
@@ -467,18 +467,59 @@
     }
     .ma{
       font-weight: bold;
+      display: flex;
+      justify-content: space-between;
     }
-    .k1{
+    #gm{
+      border: 1px solid black;
+      width: 50%;
+      text-align: center;
+      background-color: #B85E2C;
+      color: white;
+    }
+    #go{
+      border: 1px solid black;
+      width: 50%;
+      text-align: center;
+    }
+    #go:hover{
+      background-color: #26335D;
+      color: white;
+    }
+    .go{
+      background-color: #26335D;
+      color: white;
+    }
+    #k1{
       font-size: 1.375rem;
       font-weight: bold;
       color: #B85E2C;
     }
+    #k2{
+      font-size: 0.6rem;
+    }
+    #k3{
+      font-size: 1.375rem;
+      font-weight: bold;
+      color: #2C66B8;
+    }
+    
     .mon{
       font-size: 0.81rem;
       color: #184687;
     }
+    .monn{
+      font-size: 0.81rem;
+      color: #B85E2C;
+    }
     .payment:hover{
       border: 2px solid #E5331C;
+    }
+    .content{
+      display: none;
+    }
+    .show{
+      display: block;
     }
 
 
@@ -904,14 +945,7 @@
       margin: 10px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
-    .item-two{
-      display: inline-block;
-      padding: 10px;
-      background-color: white;
-      margin: 10px;
-      margin-left: 10px;
-      font-family: "Inter", sans-serif;
-    }
+   
 
 
     .maths{
@@ -1048,6 +1082,13 @@
     margin-left: 20px;
     margin-top: 50px;
   }
+  #flex{
+    display: none;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-around;
+  }
   .girl{
     margin-top: -15px;
   }
@@ -1063,9 +1104,11 @@
   }
 
 
+
+
+
   .fourth{
     background-color: #252B42;
-    padding-left: 10px;
   }
 
   .what-we-offer-2{
@@ -1076,23 +1119,20 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-}
-  #flex{
-    display: none;
   }
-  .flex{
+  .item-two{
     display: flex;
-    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    font-family: "Inter", sans-serif;
   }
+  
   .offer-buy{
     margin: 0;
     color: #FF6551;
   }
-
-  .white-prac{
-    color: white;
-  }
-
   .our-course{
     font-size: 13px;
     font-weight: 500;
@@ -1101,52 +1141,78 @@
   }
 
 
-  .caps{
-    font-size: 14.67px;
-    font-weight: bold;
+  .row{
+    display: none; 
   }
-
-  .naira{
-    font-size: 25px;
-    color: #B85E2C;
-    font-weight: bold;
+  .payment, .paymenttwo{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
   }
-  .per{
-    font-size: 8px;
-    color: #2C66B8;
-    margin-top: -23px;
-  }
-  .secure{
-    font-size: 10px;
-    color: #545252;
-  }
-  .tryy{
+  .enroll{
     background-color: #E5331C;
     color: white;
-    width: 100px;
     text-align: center;
-    padding: 8px;
-    font-size: 11px;
-    border-radius: 5px;
+    width: 40%;
     margin: auto;
+    border-radius: 5px;
+    padding: 5px;
   }
-  .green{
+  .ma{
+    font-weight: bold;
     display: flex;
-    width: 120px;
-    justify-content: center;
-    margin:auto;
-    margin-top: 10px;
     justify-content: space-between;
   }
-  .download{
-    font-size: 10px;
-    font-weight: bold;
-    color: #565454;
-    margin-top: 2px;
+  #gm{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    background-color: #B85E2C;
+    color: white;
   }
-
-  .row{
+  #go{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+  }
+  #go:hover{
+    background-color: #26335D;
+    color: white;
+  }
+  .go{
+    background-color: #26335D;
+    color: white;
+  }
+  #k1{
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #B85E2C;
+  }
+  #k2{
+    font-size: 0.6rem;
+  }
+  #k3{
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #2C66B8;
+  }
+  
+  .mon{
+    font-size: 0.81rem;
+    color: #184687;
+  }
+  .monn{
+    font-size: 0.81rem;
+    color: #B85E2C;
+  }
+  .payment:hover{
+    border: 2px solid #E5331C;
+  }
+  .content{
     display: none;
+  }
+  .show{
+    display: block;
   }
 
 
@@ -1614,14 +1680,6 @@
       margin: 10px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
-    .item-two{
-      display: inline-block;
-      padding: 10px;
-      background-color: white;
-      margin: 10px;
-      margin-left: 30px;
-      font-family: "Inter", sans-serif;
-    }
     
     .maths{
       width: 40px;
@@ -1775,6 +1833,9 @@
   }
 
 
+
+
+
   .fourth{
     background-color: #252B42;
     padding-left: 50px;
@@ -1811,50 +1872,99 @@
     font-family: "Inter", sans-serif;
     color: white;
   }
-
-
-  .caps{
-    font-size: 14.67px;
-    font-weight: bold;
+  .item-two{
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .offer-buy{
+    margin: 0;
+    color: #FF6551;
+  }
+  .our-course{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: white;
   }
 
-  .naira{
-    font-size: 25px;
-    color: #B85E2C;
-    font-weight: bold;
+
+  .row{
+    display: none; 
   }
-  .per{
-    font-size: 8px;
-    color: #2C66B8;
-    margin-top: -23px;
+  .payment, .paymenttwo{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
   }
-  .secure{
-    font-size: 10px;
-    color: #545252;
-  }
-  .tryy{
+  .enroll{
     background-color: #E5331C;
     color: white;
-    width: 100px;
     text-align: center;
-    padding: 8px;
-    font-size: 11px;
-    border-radius: 5px;
+    width: 40%;
     margin: auto;
+    border-radius: 5px;
+    padding: 5px;
   }
-  .green{
+  .ma{
+    font-weight: bold;
     display: flex;
-    width: 120px;
-    justify-content: center;
-    margin:auto;
-    margin-top: 10px;
     justify-content: space-between;
   }
-  .download{
-    font-size: 10px;
+  #gm{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    background-color: #B85E2C;
+    color: white;
+  }
+  #go{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+  }
+  #go:hover{
+    background-color: #26335D;
+    color: white;
+  }
+  .go{
+    background-color: #26335D;
+    color: white;
+  }
+  #k1{
+    font-size: 1.375rem;
     font-weight: bold;
-    color: #565454;
-    margin-top: 2px;
+    color: #B85E2C;
+  }
+  #k2{
+    font-size: 0.6rem;
+  }
+  #k3{
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #2C66B8;
+  }
+  
+  .mon{
+    font-size: 0.81rem;
+    color: #184687;
+  }
+  .monn{
+    font-size: 0.81rem;
+    color: #B85E2C;
+  }
+  .payment:hover{
+    border: 2px solid #E5331C;
+  }
+  .content{
+    display: none;
+  }
+  .show{
+    display: block;
   }
 
 
