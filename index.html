@@ -14,27 +14,27 @@
             <div class="name">M<span class="e">E</span>A</div>
         </a>
         <div class="dropdown">
-            <div><img src="./img/nav.png" alt=""></div>
+            <div id="nav" onclick="toggleNavbar()">
+                <div><hr class="navi"></div>
+                <div><hr class="navi-brown"></div>
+                <div><hr class="navi-blue"></div>
+            </div>
+            <div class="navbar-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+             
         </div>
 
 
         <div class="dropdown-desk">
             <div class="color-brown">Home</div>
             <div>About</div>
-            <div>Pricing</div>
-            <div>Project</div>
+            <div>Donation</div>
             <div>Highschool</div>
-            <div>Languages</div>
-        </div>
-
-        <div class="sign-desk">
-            <div id="desk">
-                <div><i class="fa-solid fa-lock"></i></div>
-                <div>Login</div>
-            </div>
-            <div id="sign-blue">
-                Sign up for Free
-            </div>
+            <div>Culture</div>
         </div>
     </header>
 
@@ -370,6 +370,24 @@
             <p class="our-course">Make Nigeria Great Again</p>
         </div>
 
+        <div class="small">
+            <div class="payment">
+                <div class="change">
+                    <div class="ma">
+                        <div id="gm"><p>Give Monthly</p></div>
+                        <div id="go"><p>Give Once</p></div>
+                    </div>
+                    <div id="monthly" class="content">
+                        <p id="k1">Invest in the Future: Support Made Easy Academia for as little as N1000 <span class="mon">per month/ once</span></p>
+                        <p id="k2">By offering high-quality educational content in four major Nigerian languages (Hausa, English, Yoruba, and Igbo), Made Easy Academia has the potential to break down language barriers and improve access to education for students from diverse backgrounds.
+                            This is particularly crucial for students in rural areas or those who may not be proficient in English, the primary language of instruction in many Nigerian schools.
+                        </p>
+                    </div>
+                </div>
+                <div class="enroll">DONATE NOW</div>
+            </div>
+        </div>
+
         <div class="scrollable-container-two">
             <div class="scrollable-content">
               <div class="item-two">
@@ -377,17 +395,11 @@
                 <div class="payment">
                     <div class="change">
                         <div class="ma">
-                            <div id="gm" onclick="showContent('monthly')"><p>Give Monthly</p></div>
-                            <div id="go" onclick="showContent('once')"><p>Give Once</p></div>
+                            <div id="gm"><p>Give Monthly</p></div>
+                            <div id="go"><p>Give Once</p></div>
                         </div>
                         <div id="monthly" class="content">
-                            <p id="k1">Invest in the Future: Support Made Easy Academia for as little as N1000 <span class="mon">per month</span></p>
-                            <p id="k2">By offering high-quality educational content in four major Nigerian languages (Hausa, English, Yoruba, and Igbo), Made Easy Academia has the potential to break down language barriers and improve access to education for students from diverse backgrounds.
-                                This is particularly crucial for students in rural areas or those who may not be proficient in English, the primary language of instruction in many Nigerian schools.
-                            </p>
-                        </div>
-                        <div id="once" class="content show">
-                            <p id="k3">Invest in the Future: Support Made Easy Academia for as little as N10,000 <span class="monn">once</span></p>
+                            <p id="k1">Invest in the Future: Support Made Easy Academia for as little as N1000 <span class="mon">per month/ once</span></p>
                             <p id="k2">By offering high-quality educational content in four major Nigerian languages (Hausa, English, Yoruba, and Igbo), Made Easy Academia has the potential to break down language barriers and improve access to education for students from diverse backgrounds.
                                 This is particularly crucial for students in rural areas or those who may not be proficient in English, the primary language of instruction in many Nigerian schools.
                             </p>
@@ -398,29 +410,6 @@
               </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="payment">
-                <div class="change">
-                    <div class="ma">
-                        <div id="gm" onclick="showContent('monthly')"><p>Give Monthly</p></div>
-                        <div id="go" onclick="showContent('once')"><p>Give Once</p></div>
-                    </div>
-                    <div id="monthly" class="content">
-                        <p id="k1">Invest in the Future: Support Made Easy Academia for as little as N1000 <span class="mon">per month</span></p>
-                        <p id="k2">By offering high-quality educational content in four major Nigerian languages (Hausa, English, Yoruba, and Igbo), Made Easy Academia has the potential to break down language barriers and improve access to education for students from diverse backgrounds.
-                            This is particularly crucial for students in rural areas or those who may not be proficient in English, the primary language of instruction in many Nigerian schools.
-                        </p>
-                    </div>
-                    <div id="once" class="content show">
-                        <p id="k3">Invest in the Future: Support Made Easy Academia for as little as N10,000 <span class="monn">once</span></p>
-                        <p id="k2">By offering high-quality educational content in four major Nigerian languages (Hausa, English, Yoruba, and Igbo), Made Easy Academia has the potential to break down language barriers and improve access to education for students from diverse backgrounds.
-                            This is particularly crucial for students in rural areas or those who may not be proficient in English, the primary language of instruction in many Nigerian schools.
-                        </p>
-                    </div>
-                </div>
-                <div class="enroll">DONATE NOW</div>
-            </div>
         </div>
     </section>
 
@@ -456,9 +445,6 @@
 
 
     <section id="fifth-desk">
-
-
-
         <div class="first">
             <div class="box-sign">
                 <p class="signupp">Sign Up</p>
@@ -677,15 +663,9 @@
         </div>
     </footer>
     <script>
-        function showContent(id) {
-          // Hide all content divs
-          var contentDivs = document.getElementsByClassName('content');
-          for (var i = 0; i < contentDivs.length; i++) {
-            contentDivs[i].classList.remove('show');
-          }
-        
-          // Show the selected content div
-          document.getElementById(id).classList.add('show');
+        function toggleNavbar() {
+          const navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('navbar-open'); 
         }
         </script>
 </body>

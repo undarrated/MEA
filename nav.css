@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@media screen and (max-width: 786px) {
+    body{
+        background-color: #F6F6F6;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding-top: 5px;
+    }
+    .name{
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: #2C66B8;
+        font-family: "Inter", sans-serif;
+        margin-left: 30px;
+    }
+    nav{
+        font-size: 1.5rem;
+        margin-left: 30px;
+        font-weight: bold;
+    }
+
+    .e{
+        color: #B85E2C;
+    }
+    a{
+        text-decoration: none;
+        color: #2C66B8;
+    }
+    
+}
