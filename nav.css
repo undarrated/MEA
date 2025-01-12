@@ -14,12 +14,12 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding-top: 5px;
+        padding-top: 10px;
     }
     .name{
-        font-size: 1.75rem;
+        font-size: 2rem;
         font-weight: 900;
-        color: black;
+        color: #2C66B8;
         font-family: "Inter", sans-serif;
         margin-left: 30px;
     }
@@ -27,6 +27,12 @@
         font-size: 1.5rem;
         margin-left: 30px;
         font-weight: bold;
+        margin-top: 10px;
+        font-family: "Inter", sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-evenly;
     }
 
     .e{
@@ -35,6 +41,15 @@
     a{
         text-decoration: none;
         color: #2C66B8;
+    }
+    a:hover{
+        background-color: #B85E2C;
+        color: white;
+    }
+    footer{
+        text-align: center;
+        color: rgb(93, 91, 91);
+        margin-top: 100px;
     }
     
 }
