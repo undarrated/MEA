@@ -4,19 +4,22 @@
 
 @media screen and (max-width: 786px) {
     body{
-        background-color: #F6F6F6;
+        background-image: url(./img/nav-back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
     }
     header{
         width: 100%;
         display: flex;
         justify-content: space-between;
-        background-color: white;
         padding-top: 5px;
     }
     .name{
         font-size: 1.75rem;
         font-weight: 900;
-        color: #2C66B8;
+        color: black;
         font-family: "Inter", sans-serif;
         margin-left: 30px;
     }
