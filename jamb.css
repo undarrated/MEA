@@ -42,9 +42,35 @@
     .dropdown{
         padding: 10px;
         margin-right: 15px;
-        margin-top: 4px;
+        
     }
-
+    .navi{
+      padding: 2px;
+      background-color: #184687;
+      border: none;
+      margin-bottom: -5px;
+      width: 30px;
+    }
+    .navi-brown{
+      background-color: #B85E2C;
+      padding: 2px;
+      border: none;
+      width: 30px;
+    }
+    .navi-blue{
+      padding: 2px;
+      background-color: #184687;
+      border: none;
+      margin-top: -5px;
+      width: 30px;
+    }
+    .navbar-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
     .dropdown-desk, .sign-desk{
         display: none;
     }
