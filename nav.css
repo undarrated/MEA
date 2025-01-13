@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 786px) {
     body{
-        background-image: url(./img/nav-back.png);
+        background-color: #2C66B8;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -19,14 +19,13 @@
     .name{
         font-size: 2rem;
         font-weight: 900;
-        color: #2C66B8;
+        color: white;
         font-family: "Inter", sans-serif;
         margin-left: 30px;
     }
     nav{
-        font-size: 1.5rem;
-        margin-left: 30px;
-        font-weight: bold;
+        font-size: 1rem;
+        margin-left: 30px;      
         margin-top: 10px;
         font-family: "Inter", sans-serif;
         display: flex;
@@ -40,16 +39,29 @@
     }
     a{
         text-decoration: none;
-        color: #2C66B8;
+        color: white;
     }
     a:hover{
-        background-color: #B85E2C;
+        background-color: #26335D;
         color: white;
+    }
+    main{
+        font-size: 1rem;
+        margin-left: 30px;      
+        margin-top: 10px;
+        font-family: "Inter", sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        justify-content: space-evenly;
+    }
+    hr{
+        width: 100%;
     }
     footer{
         text-align: center;
         color: rgb(93, 91, 91);
-        margin-top: 100px;
+        margin-top: 50px;
     }
     
 }
