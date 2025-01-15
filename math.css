@@ -143,6 +143,20 @@
         font-size: 1.8rem;
         font-weight: bold;
       }
+      #home{
+        color: #8F8E8E;
+        font-size: 0.8rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    #course{
+        color: white;
+    }
+    .enroll:hover{
+        background-color: #B85E2C;
+        color: white;
+    }
 }
 
 
@@ -165,6 +179,17 @@
     }
     #home{
         color: #8F8E8E;
+        font-size: 0.8rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    #course{
+        color: white;
+    }
+    .enroll:hover{
+        background-color: #B85E2C;
+        color: white;
     }
     .bold{
         font-size: 1.75rem;
@@ -245,6 +270,7 @@
     }
     #secondhalf{
         padding: 20px;
+        width: 100%;
     }
     .theory{
         font-size: 1.2rem;
@@ -303,7 +329,7 @@
 
 @media (min-width: 1000px){
     body{
-        padding: 0;
+        padding: 0 100px;
         margin: 0;
     }
     header{
@@ -382,6 +408,20 @@
         border-radius: 50%;
         height: 30px;
     }
+    #home{
+        color: #8F8E8E;
+        font-size: 0.8rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    #course{
+        color: white;
+    }
+    .enroll:hover{
+        background-color: #B85E2C;
+        color: white;
+    }
     
     .albert{
         display: flex;
@@ -405,6 +445,7 @@
     }
     #secondhalf{
         padding: 20px;
+        width: 50%;
     }
     .theory{
         font-size: 1.2rem;

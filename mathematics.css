@@ -199,13 +199,18 @@
 
 @media (min-width: 1000px){
     body{
-        padding: 0;
+        padding: 100px;
         background-color: #DF4C07;
         font-family: "Inter", sans-serif;
         margin: 0;
     }
     header{
         display: flex;
+    }
+    #arr{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
     }
     .bb{
         padding: 10px;
@@ -234,7 +239,7 @@
 
     .first{
         background-color: white;
-        padding: 10px;
+        padding: 50px;
     }
     .benefit{
         margin: auto;
@@ -281,8 +286,10 @@
        overflow-x: auto;
         white-space: nowrap;
         width: 60%;
-        padding-top: 120px;
     } 
+    .set-text{
+        display: none;
+    }
       .scrollable-content {
         display: flex;
       }
@@ -301,6 +308,9 @@
         padding: 10px;
         display: flex;
     }
+    .third a{
+        color: white;
+    }
     .third .calculus{
         background-color: #DF4C07;
         color: white;
@@ -308,5 +318,14 @@
     }
     .third .cal{
         color: white;
+    }
+    .item-one a{
+        text-decoration: none;
+    }
+    .free{
+        color: black;
+    }
+    hr{
+        color: rgb(196, 196, 196);
     }
 }
