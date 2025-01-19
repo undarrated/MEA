@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@media screen and (max-width: 786px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        background-color: #DF4C07;
+        padding: 20px;
+        color: white;
+        font-family: "Inter", sans-serif;
+    }
+    .home{
+        display: flex;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    #home{
+        color: #8F8E8E;
+    }
+    .bold{
+        font-size: 1.75rem;
+    }
+    .body-text{
+        font-size: 1.125rem;
+        font-family: "Inria Sans", sans-serif;
+        font-weight: 200;
+        color: #D4D2D2;
+    }
+    #yusufs{
+        display: flex;
+    }
+    .yusuf-mini{
+        background-image: url(./img/yusufmini.png);
+        width: 62px;
+        height: 69.13px;
+    }
+    .up{
+        margin-top: -10px;
+        margin-left: 6px;
+    }
+    .halfsection{
+        padding: 20px;
+        font-family: "Inria Sans", sans-serif;
+        border-bottom: 1px solid #8F8E8E;
+    }
+    #description{
+        font-family: "Inika", serif;
+        font-size: 1.75rem;
+        margin: 0;
+    }
+    .imghalf{
+        background-image: url(./img/teacher.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 30vh; /* Set the height to 100% of the viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #play{
+        background-color: rgba(255, 255, 255, 0.568);
+        padding: 30px;
+        border-radius: 50%;
+        height: 30px;
+    }
+    .albert{
+        display: flex;
+        margin-left: 20px;
+    }
+    .hrr{
+        height: 35px;
+        padding: 3px;
+        background-color: #8F8E8E;
+    }
+    #italy{
+        font-style: italic;
+        margin: 0;
+        margin-left: 10px;
+    }
+    #einstein{
+        color: #2C59C0;
+        font-weight: 700;
+        text-align: end;
+        margin: 0;
+    }
+    #secondhalf{
+        padding: 20px;
+    }
+    .theory{
+        font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+    }
+    .setop{
+        text-decoration: dotted;
+        color: #8F8E8E;
+    }
+    .payment{
+        background-color: #DF4C07;
+        padding: 20px;
+        margin-bottom: 30px;
+        font-family: "Inter", sans-serif;
+        color: white;
+      }
+      .enroll{
+        background-color: #D4D2D2;
+        color: black;
+        text-align: center;
+        width: 40%;
+        margin: auto;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .ma{
+        font-weight: bold;
+      }
+      .k1{
+        font-size: 1.375rem;
+        font-weight: bold;
+      }
+      #footer{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Inter", sans-serif;
+      }
+
+      .levell{
+        font-size: 1.125rem;
+        
+        
+      }
+      .flex{
+        display: flex;
+      }
+      .hi{
+        height: 100px;
+      }
+      .ten{
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      #home{
+        color: #8F8E8E;
+        font-size: 0.8rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    #course{
+        color: white;
+    }
+    .enroll:hover{
+        background-color: #B85E2C;
+        color: white;
+    }
+}
+
+
+@media screen and (min-width: 787px) and (max-width: 999px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        background-color: #DF4C07;
+        padding: 40px;
+        color: white;
+        font-family: "Inter", sans-serif;
+        
+    }
+    .home{
+        display: flex;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    #home{
+        color: #8F8E8E;
+        font-size: 0.8rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    #course{
+        color: white;
+    }
+    .enroll:hover{
+        background-color: #B85E2C;
+        color: white;
+    }
+    .bold{
+        font-size: 1.75rem;
+    }
+    .body-text{
+        font-size: 1.125rem;
+        font-family: "Inria Sans", sans-serif;
+        font-weight: 200;
+        color: #D4D2D2;
+    }
+    #yusufs{
+        display: flex;
+    }
+    .yusuf-mini{
+        background-image: url(./img/yusufmini.png);
+        width: 62px;
+        height: 69.13px;
+    }
+    .up{
+        margin-top: -10px;
+        margin-left: 6px;
+    }
+
+
+
+
+
+    .first-section{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .halfsection{
+        padding: 20px;
+        font-family: "Inria Sans", sans-serif;
+        border-bottom: 1px solid #8F8E8E;
+        
+    }
+    #description{
+        font-family: "Inika", serif;
+        font-size: 1.75rem;
+        margin: 0;
+    }
+    .imghalf{
+        background-image: url(./img/teacher.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 30vh; /* Set the height to 100% of the viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #play{
+        background-color: rgba(255, 255, 255, 0.568);
+        padding: 30px;
+        border-radius: 50%;
+        height: 30px;
+    }
+    .albert{
+        display: flex;
+        margin-left: 20px;
+    }
+    .hrr{
+        height: 35px;
+        padding: 3px;
+        background-color: #8F8E8E;
+    }
+    #italy{
+        font-style: italic;
+        margin: 0;
+        margin-left: 10px;
+    }
+    #einstein{
+        color: #2C59C0;
+        font-weight: 700;
+        text-align: end;
+        margin: 0;
+    }
+    #secondhalf{
+        padding: 20px;
+        width: 100%;
+    }
+    .theory{
+        font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+    }
+    .setop{
+        text-decoration: dotted;
+        color: #8F8E8E;
+    }
+    .payment{
+        background-color: #DF4C07;
+        padding: 20px;
+        margin-bottom: 30px;
+        font-family: "Inter", sans-serif;
+        color: white;
+      }
+      .enroll{
+        background-color: #D4D2D2;
+        color: black;
+        text-align: center;
+        width: 40%;
+        margin: auto;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .ma{
+        font-weight: bold;
+      }
+      .k1{
+        font-size: 1.375rem;
+        font-weight: bold;
+      }
+      #footer{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Inter", sans-serif;
+      }
+
+      .levell{
+        font-size: 1.125rem;
+        
+        
+      }
+      .flex{
+        display: flex;
+      }
+      .hi{
+        height: 100px;
+      }
+      .ten{
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+}
+
+@media (min-width: 1000px){
+    body{
+        padding: 0 100px;
+        margin: 0;
+    }
+    header{
+        background-color: #DF4C07;
+        padding: 40px;
+        color: white;
+        font-family: "Inter", sans-serif;
+        
+    }
+    .home{
+        display: flex;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    #home{
+        color: #8F8E8E;
+    }
+    .bold{
+        font-size: 1.75rem;
+    }
+    .body-text{
+        font-size: 1.125rem;
+        font-family: "Inria Sans", sans-serif;
+        font-weight: 200;
+        color: #D4D2D2;
+    }
+    #yusufs{
+        display: flex;
+    }
+    .yusuf-mini{
+        background-image: url(./img/yusufmini.png);
+        width: 62px;
+        height: 69.13px;
+    }
+    .up{
+        margin-top: -10px;
+        margin-left: 6px;
+    }
+
+
+
+
+
+    .first-section{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+    }
+    .halfsection{
+        padding: 20px;
+        font-family: "Inria Sans", sans-serif;
+        border-bottom: 1px solid #8F8E8E;
+        
+    }
+    #description{
+        font-family: "Inika", serif;
+        font-size: 1.75rem;
+        margin: 0;
+    }
+    .imghalf{
+        background-image: url(./img/teacher.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 40vh; /* Set the height to 100% of the viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imghalf:hover{
+        border: 2px solid #DF4C07;
+    }
+    #play{
+        background-color: rgba(255, 255, 255, 0.568);
+        padding: 30px;
+        border-radius: 50%;
+        height: 30px;
+    }
+    #home{
+        color: #8F8E8E;
+        font-size: 0.8rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    #course{
+        color: white;
+    }
+    .enroll:hover{
+        background-color: #B85E2C;
+        color: white;
+    }
+    
+    .albert{
+        display: flex;
+        margin-left: 20px;
+    }
+    .hrr{
+        height: 35px;
+        padding: 3px;
+        background-color: #8F8E8E;
+    }
+    #italy{
+        font-style: italic;
+        margin: 0;
+        margin-left: 10px;
+    }
+    #einstein{
+        color: #2C59C0;
+        font-weight: 700;
+        text-align: end;
+        margin: 0;
+    }
+    #secondhalf{
+        padding: 20px;
+        width: 50%;
+    }
+    .theory{
+        font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+    }
+    .setop{
+        text-decoration: dotted;
+        color: #8F8E8E;
+        cursor: pointer;
+    }
+    .setop:hover{
+        color: #2C59C0;
+    }
+    .payment{
+        background-color: #DF4C07;
+        padding: 20px;
+        margin-bottom: 30px;
+        font-family: "Inter", sans-serif;
+        color: white;
+      }
+      .enroll{
+        background-color: #D4D2D2;
+        color: black;
+        text-align: center;
+        width: 40%;
+        margin: auto;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .ma{
+        font-weight: bold;
+      }
+      .k1{
+        font-size: 1.375rem;
+        font-weight: bold;
+      }
+      #footer{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Inter", sans-serif;
+      }
+
+      .levell{
+        font-size: 1.125rem;
+        
+        
+      }
+      .flex{
+        display: flex;
+      }
+      .hi{
+        height: 100px;
+      }
+      .ten{
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+}
