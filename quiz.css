@@ -17,8 +17,9 @@ body {
   border-radius: 20px;
 }
 
-h1 {
-  text-align: center;
+h2 {
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .question {
