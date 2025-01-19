@@ -3,11 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @media screen and (max-width: 786px) {
-    body{
-        background-color: #D9D9D9;
-        font-family: "Inter", sans-serif;
-        margin: 0;
-    }
+
 
     header{
         width: 100%;
@@ -18,9 +14,10 @@
     }
 
     body{
-      background-color: #F6F6F6;
+      background-color: #E1E1E1;
       margin: 0;
       line-height: 1.6;
+      font-family: "Inter", sans-serif;
     }
 
     .space{
@@ -81,7 +78,7 @@
         display: flex;
     }
     .black{
-        background-color: #B85E2C;
+        background-color: #2C66B8;
         font-size: 2rem;
         padding: 10px;
         color: #D9D9D9;
@@ -101,7 +98,7 @@
         font-size: 2rem;
         font-family: "Inika", serif;
         font-weight: bold;
-        color: #6D3110;
+        color: #2C66B8;
         line-height: 50px;
     }
 
@@ -112,7 +109,7 @@
 
 
     .second{
-        background-color: #B85E2C;
+        background-color: #2C66B8;
         color: white;
     }
     .img-head, .text-head{
@@ -129,7 +126,7 @@
         padding: 10px;
         text-align: center;
         background-color: #D9D9D9;
-        color: #6D3110;
+        color: #2C66B8;
         border-radius: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
@@ -141,6 +138,10 @@
         border-radius: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
+    }
+    #round:hover{
+        background-color: #184687;
+        color: white;
     }
 
     .scrollable-container {
@@ -279,12 +280,6 @@
 
 
 @media screen and (min-width: 787px) and (max-width: 999px) {
-    body{
-        background-color: #D9D9D9;
-        font-family: "Inter", sans-serif;
-        margin: 0;
-    }
-
     header{
         width: 100%;
         display: flex;
@@ -294,9 +289,10 @@
     }
 
     body{
-      background-color: #F6F6F6;
+      background-color: #E1E1E1;
       margin: 0;
       line-height: 1.6;
+      font-family: "Inter", sans-serif;
     }
 
     .space{
@@ -362,7 +358,7 @@
 
 
     .second{
-        background-color: #B85E2C;
+        background-color: #2C66B8;
         color: white;
         display: flex;
         
@@ -383,7 +379,7 @@
         padding: 10px;
         text-align: center;
         background-color: #D9D9D9;
-        color: #6D3110;
+        color: #E1E1E1;
         border-radius: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
@@ -538,11 +534,6 @@
 
 
 @media (min-width: 1000px){
-    body{
-        background-color: #D9D9D9;
-        font-family: "Inter", sans-serif;
-        margin: 0;
-    }
 
     header{
         width: 100%;
@@ -553,9 +544,10 @@
     }
 
     body{
-      background-color: #F6F6F6;
+      background-color: #E1E1E1;
       margin: 0;
       line-height: 1.6;
+      font-family: "Inter", sans-serif;
     }
 
     .space{
@@ -590,7 +582,7 @@
         display: flex;
     }
     .black{
-        background-color: #B85E2C;
+        background-color: #2C66B8;
         font-size: 1rem;
         padding: 10px;
         color: #D9D9D9;
@@ -610,7 +602,7 @@
         font-size: 1.5rem;
         font-family: "Inika", serif;
         font-weight: bold;
-        color: #6D3110;
+        color: #184687;
         line-height: 40px;
     }
 
@@ -626,7 +618,7 @@
     }
     .text-head{
        width: 100%; 
-       color: #6D3110;
+       color: #184687;
        font-weight: bold;
        
        margin-top: 30px;
@@ -639,7 +631,7 @@
 
 
     .second{
-        background-color: #B85E2C;
+        background-color: #2C66B8;
         color: white;
         display: flex;
         
@@ -670,7 +662,8 @@
         margin-bottom: 10px;
     }
     #round:hover{
-        background-color: #6D3110;
+        background-color: #184687;
+        color: white;
         cursor: pointer;
     }
 
