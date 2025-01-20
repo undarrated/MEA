@@ -9,6 +9,9 @@
         justify-content: space-between;
         background-color: black;
         padding-top: 5px;
+        position: fixed;
+        z-index: 999;
+        top: 0;
     }
 
     body{
@@ -80,11 +83,14 @@
         font-weight: 400;
         font-style: italic;
     }
-    .img{
-        background-image: url(./img/hausa.png);
-        max-width: 415px;
-        height: 425.8px;
+    .meet{
+        width: 95%;
+        background-color: aqua;
         margin: auto;
+    }
+    img{
+        width: 100%;
+        height: auto;
     }
 
     .cont-mont{
@@ -109,6 +115,9 @@
     }
     .dropdown-desk{
         display: none;
+    }
+    .first{
+        padding: 50px 5px;
     }
 }
 
