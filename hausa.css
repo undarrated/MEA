@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@media screen and (max-width: 786px) {
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding-top: 5px;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+    }
+
+    body{
+      background-color: #F6F6F6;
+      margin: 0;
+      line-height: 1.6;
+      font-family: "Inter", sans-serif;
+    }
+
+    .space{
+      width: 80%;
+      margin: auto;
+    }
+
+
+    .name{
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: white;
+        font-family: "Inter", sans-serif;
+        margin-left: 30px;
+    }
+    .dropdown{
+        padding: 10px;
+        margin-right: 15px;
+        
+    }
+    .navi{
+      padding: 2px;
+      background-color: white;
+      border: none;
+      margin-bottom: -5px;
+      width: 30px;
+    }
+    .navi-brown{
+      background-color: white;
+      padding: 2px;
+      border: none;
+      width: 30px;
+    }
+    .navi-blue{
+      padding: 2px;
+      background-color: white;
+      border: none;
+      margin-top: -5px;
+      width: 30px;
+    }
+    .navbar-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .dropdown-desk, .side{
+        display: none;
+    }
+    .first{
+        padding: 50px 10px;
+    }
+    table{
+        background-color: rgb(225, 225, 225);
+        max-width: 700px;
+    }
+    tr{
+        text-align: center;
+    }
+    .top{
+        background-color: black;
+        color: white;
+    }
+}
+
+
+@media screen and (min-width: 787px) and (max-width: 999px) {
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding-top: 5px;
+    }
+
+    body{
+      background-color: #F6F6F6;
+      margin: 0;
+      line-height: 1.6;
+      font-family: "Inter", sans-serif;
+    }
+
+    .space{
+      width: 80%;
+      margin: auto;
+    }
+
+
+    .name{
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: white;
+        font-family: "Inter", sans-serif;
+        margin-left: 30px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .dropdown-desk{
+        display: flex;
+        color: white;
+        width: 50%;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .side{
+        display: flex;
+    }
+    .img{
+        display: none;
+    }
+    .first{
+        padding: 5px 100px;
+    }
+    table{
+        background-color: rgb(225, 225, 225);
+        width: 80%;
+    }
+    tr{
+        text-align: center;
+    }
+    .top{
+        background-color: black;
+        color: white;
+    }
+   
+}
+
+@media (min-width: 1000px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding-top: 5px;
+    }
+
+    body{
+      background-color: #F6F6F6;
+      margin: 0;
+      line-height: 1.6;
+      font-family: "Inter", sans-serif;
+    }
+
+    .space{
+      width: 80%;
+      margin: auto;
+    }
+
+
+    .name{
+        font-size: 1.75rem;
+        font-weight: 900;
+        color: white;
+        font-family: "Inter", sans-serif;
+        margin-left: 30px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .dropdown-desk{
+        display: flex;
+        color: white;
+        width: 50%;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .side{
+        display: flex;
+    }
+    .img{
+        display: none;
+    }
+    .first{
+        padding: 10px 100px;
+    }
+    table{
+        background-color: rgb(225, 225, 225);
+        width: 50%;
+    }
+    tr{
+        text-align: center;
+    }
+    .top{
+        background-color: black;
+        color: white;
+    }
+
+}
