@@ -76,7 +76,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        height: 60vh; /* Set the height to 100% of the viewport height */
+        height: 100vh; /* Set the height to 100% of the viewport height */
         color: white;
         display: flex;
         justify-content: center;
@@ -97,6 +97,7 @@
         border: 1px solid white;
         padding: 9px;
         text-align: center;
+        color: white;
     }
     .more:hover{
         background-color: black;
@@ -227,7 +228,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        height: 40vh; /* Set the height to 100% of the viewport height */
+        height: 100vh; /* Set the height to 100% of the viewport height */
         color: white;
         display: flex;
         justify-content: center;
@@ -243,11 +244,13 @@
     .divide{
         display: flex;
         justify-content: space-around;
+        width: 50%;
     }
     .more{
         border: 1px solid white;
         padding: 9px;
         text-align: center;
+        color: white;
     }
     .more:hover{
         background-color: black;
@@ -400,11 +403,13 @@
     .divide{
         display: flex;
         justify-content: space-around;
+        width: 50%;
     }
     .more{
         border: 1px solid white;
         padding: 9px;
         text-align: center;
+        color: White;
     }
     .more:hover{
         background-color: black;
