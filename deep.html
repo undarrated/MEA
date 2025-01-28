@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Made Easy Academia - JAMB Mathematics Quiz</title>
+  <link rel="stylesheet" href="deep.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>JAMB Mathematics Quiz</h1>
+    <div id="quiz"></div>
+    <div id="result" class="result"></div>
+    <div id="buttons" class="buttons">
+      <button id="see-corrections" class="btn">See Corrections</button>
+      <button id="play-again" class="btn">Play Again</button>
+      <button id="quit-quiz" class="btn">Quit Quiz</button>
+    </div>
+  </div>
+  <script>
+    // Sample JAMB Mathematics Questions (500 questions)
+const questions = [
+  { question: "What is 2 + 2?", options: ["A. 3", "B. 4", "C. 5", "D. 6"], answer: "B" },
+  { question: "What is the square root of 16?", options: ["A. 2", "B. 3", "C. 4", "D. 5"], answer: "C" },
+  {
+    question: "What is the value of 3 + 5 × 2?",
+    options: ["A. 13", "B. 16", "C. 10", "D. 11"],
+    answer: "A"
+  },
+  {
+    question: "Simplify: 2x + 3y - x + 4y.",
+    options: ["A. x + 7y", "B. 3x + 7y", "C. x + y", "D. 3x + y"],
+    answer: "A"
+  },
+  {
+    question: "What is the square root of 144?",
+    options: ["A. 12", "B. 14", "C. 16", "D. 18"],
+    answer: "A"
+  },
+  // Add 498 more questions here...
+];
+
+// Shuffle function to randomize questions
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Select 100 random questions
+let selectedQuestions = shuffle(questions).slice(0, 100);
+
+let currentQuestionIndex = 0;
+let score = 0;
+let userAnswers = [];
+
+// Display the quiz
+function displayQuiz() {
+  const quizElement = document.getElementById("quiz");
+  quizElement.innerHTML = "";
+
+  selectedQuestions.forEach((q, index) => {
+    const questionElement = document.createElement("div");
+    questionElement.classList.add("question");
+
+    questionElement.innerHTML = `
+      <p>${index + 1}. ${q.question}</p>
+      <div class="options">
+        ${q.options.map(option => `
+          <label>
+            <input type="radio" name="question${index}" value="${option[0]}">
+            ${option}
+          </label>
+        `).join("")}
+      </div>
+    `;
+    quizElement.appendChild(questionElement);
+  });
+}
+
+// Check answers and display results
+function checkAnswers() {
+  userAnswers = [];
+  selectedQuestions.forEach((q, index) => {
+    const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+    if (selectedOption) {
+      userAnswers.push(selectedOption.value);
+      if (selectedOption.value === q.answer) {
+        score++;
+      }
+    } else {
+      userAnswers.push(null);
+    }
+  });
+
+  document.getElementById("result").innerHTML = `You scored ${score} out of ${selectedQuestions.length}!`;
+  document.getElementById("buttons").style.display = "block";
+}
+
+// Display corrections
+function displayCorrections() {
+  const quizElement = document.getElementById("quiz");
+  quizElement.innerHTML = "";
+
+  selectedQuestions.forEach((q, index) => {
+    const questionElement = document.createElement("div");
+    questionElement.classList.add("question");
+
+    questionElement.innerHTML = `
+      <p>${index + 1}. ${q.question}</p>
+      <div class="options">
+        ${q.options.map(option => `
+          <label style="${option[0] === q.answer ? 'color: green; font-weight: bold;' : userAnswers[index] === option[0] ? 'color: red;' : ''}">
+            ${option}
+          </label>
+        `).join("")}
+      </div>
+    `;
+    quizElement.appendChild(questionElement);
+  });
+}
+
+// Event listeners
+document.getElementById("see-corrections").addEventListener("click", displayCorrections);
+document.getElementById("play-again").addEventListener("click", () => {
+  location.reload(); // Reload the page to restart the quiz
+});
+document.getElementById("quit-quiz").addEventListener("click", () => {
+  window.close(); // Close the window (may not work in all browsers)
+});
+
+// Initialize quiz
+displayQuiz();
+
+// Submit quiz
+document.getElementById("buttons").style.display = "none";
+document.addEventListener("DOMContentLoaded", () => {
+  const submitButton = document.createElement("button");
+  submitButton.id = "submit-quiz";
+  submitButton.className = "btn";
+  submitButton.innerText = "Submit Quiz";
+  submitButton.addEventListener("click", checkAnswers);
+  document.querySelector(".quiz-container").appendChild(submitButton);
+});
+  </script>
+</body>
+</html>
