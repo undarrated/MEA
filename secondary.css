@@ -538,6 +538,10 @@
         width: 100px;
         margin: 10px auto;
       }
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
   
 }
 
@@ -1057,6 +1061,10 @@ footer{
   display: flex;
   justify-content: space-around;
   width: 70%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -1589,6 +1597,10 @@ footer{
   display: flex;
   justify-content: space-around;
   width: 70%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 }

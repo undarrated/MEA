@@ -217,6 +217,10 @@
         width: 100px;
         margin: 10px auto;
       }
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
 }
 @media screen and (min-width: 787px) and (max-width: 999px) {
   header{
@@ -225,6 +229,10 @@
     justify-content: space-between;
     background-color: #26335D;
     padding-top: 5px;
+}
+a{
+  color: inherit;
+  text-decoration: none;
 }
 
 body{
@@ -649,6 +657,10 @@ body{
     display: flex;
     justify-content: space-around;
     width: 70%;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
   }
 
 }
