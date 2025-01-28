@@ -163,6 +163,9 @@
     .scrollable-container-one{
         display: none;
     }
+    a{
+        color: inherit;
+    }
     
 }
 
@@ -272,6 +275,9 @@
     }
     .third .cal{
         color: white;
+    }
+    a{
+        color: inherit;
     }
 }
 
@@ -408,5 +414,8 @@
     }
     main{
         display: none;
+    }
+    a{
+        color: inherit;
     }
 }
