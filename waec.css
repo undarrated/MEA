@@ -267,7 +267,7 @@
     }
     .blog{
         background-color: white;
-        width: 309px;
+        max-width: 309px;
         font-weight: 700;
         padding: 20px;
         margin-bottom: 20px;
@@ -279,6 +279,11 @@
     .img{
         display: none;
     }
+    .imgblog{
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 
