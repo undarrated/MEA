@@ -280,6 +280,9 @@
     a{
         color: inherit;
     }
+    .img{
+        display: none;
+    }
 }
 
 
