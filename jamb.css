@@ -277,6 +277,9 @@
         font-weight: 400;
         font-size: 0.85rem;
     }
+    a{
+        color: inherit;
+    }
 }
 
 
@@ -535,6 +538,9 @@
     .pub{
         font-weight: 400;
         font-size: 0.85rem;
+    }
+    a{
+        color: inherit;
     }
 }
 
@@ -819,5 +825,8 @@
         justify-content: space-around;
         font-weight: light;
         color: #6D3110;
+    }
+    a{
+        color: inherit;
     }
 }

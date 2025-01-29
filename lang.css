@@ -67,6 +67,7 @@
       height: 100%;
     }
     a{
+        color: inherit;
         text-decoration: none;
     }
 
@@ -168,6 +169,7 @@
     }
     a{
         text-decoration: none;
+        color: inherit;
     }
 
     .hide-img{
@@ -294,6 +296,7 @@
     }
     a{
         text-decoration: none;
+        color: inherit;
     }
 
     .hide-img{
