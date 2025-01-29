@@ -3,25 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Made Easy Academia - JAMB Mathematics Quiz</title>
+  <title>Quiz Page</title>
   <link rel="stylesheet" href="deep.css">
 </head>
 <body>
-  <div class="quiz-container">
-    <h1>JAMB Mathematics Quiz</h1>
-    <div id="quiz"></div>
-    <div id="result" class="result"></div>
-    <div id="buttons" class="buttons">
-      <button id="see-corrections" class="btn">See Corrections</button>
-      <button id="play-again" class="btn">Play Again</button>
-      <button id="quit-quiz" class="btn">Quit Quiz</button>
+  <div id="quiz-container">
+    <div id="quiz-header">
+      <h1>Mathematics Quiz</h1>
+      <p id="question-count">Question <span id="current-question">1</span> of 100</p>
+    </div>
+    <div id="quiz-body">
+      <p id="question-text"></p>
+      <ul id="options-container">
+        <li class="option" data-option="A"></li>
+        <li class="option" data-option="B"></li>
+        <li class="option" data-option="C"></li>
+        <li class="option" data-option="D"></li>
+      </ul>
+    </div>
+    <div id="quiz-footer">
+      <button id="next-button">Next</button>
+    </div>
+  </div>
+  <div id="results-container" class="hidden">
+    <h2>Quiz Results</h2>
+    <p>Your Score: <span id="score"></span>/100</p>
+    <div id="results-actions">
+      <button id="see-corrections">See Corrections</button>
+      <button id="play-again">Play Again</button>
+      <button id="quit">Quit Quiz</button>
     </div>
   </div>
   <script>
-    // Sample JAMB Mathematics Questions (500 questions)
-const questions = [
-  { question: "What is 2 + 2?", options: ["A. 3", "B. 4", "C. 5", "D. 6"], answer: "B" },
-  { question: "What is the square root of 16?", options: ["A. 2", "B. 3", "C. 4", "D. 5"], answer: "C" },
+    // JavaScript Code
+    const questions = [
+      { question: "What is 2 + 2?", options: { A: "3", B: "4", C: "5", D: "6" }, answer: "B" },
+      { question: "Solve for x: 3x + 2 = 11", options: { A: "3", B: "4", C: "2", D: "1" }, answer: "A" },
+      // Add 100 more questions below
+      { question: "What is the square root of 16?", options: { A: "3", B: "6", C: "4", D: "5" }, answer: "C" },
+      { question: "Evaluate: 5 * 5 - 10", options: { A: "15", B: "20", C: "25", D: "10" }, answer: "A" },
+      { question: "Simplify: 6/2 + 3", options: { A: "6", B: "9", C: "3", D: "12" }, answer: "A" },
+      { question: "Find the value of x if x/3 = 9", options: { A: "18", B: "21", C: "27", D: "12" }, answer: "C" },
+      {
+    question: "What is the value of 3 + 5 × 2?",
+    options: ["A. 13", "B. 16", "C. 10", "D. 11"],
+    answer: "A"
+  },
+  {
+    question: "Simplify: 2x + 3y - x + 4y.",
+    options: ["A. x + 7y", "B. 3x + 7y", "C. x + y", "D. 3x + y"],
+    answer: "A"
+  },
+  {
+    question: "What is the square root of 144?",
+    options: ["A. 12", "B. 14", "C. 16", "D. 18"],
+    answer: "A"
+  },
+  {
+    question: "Solve for x: 2x - 4 = 10.",
+    options: ["A. 7", "B. 6", "C. 5", "D. 4"],
+    answer: "A"
+  },
+  {
+    question: "What is the area of a rectangle with length 8cm and width 5cm?",
+    options: ["A. 13cm²", "B. 40cm²", "C. 35cm²", "D. 30cm²"],
+    answer: "B"
+  },
+  {
+    question: "If y = 3x + 2, what is y when x = 4?",
+    options: ["A. 10", "B. 12", "C. 14", "D. 16"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of π (pi) to two decimal places?",
+    options: ["A. 3.14", "B. 3.16", "C. 3.12", "D. 3.18"],
+    answer: "A"
+  },
+  {
+    question: "What is the next number in the sequence: 2, 4, 6, 8, ___?",
+    options: ["A. 9", "B. 10", "C. 11", "D. 12"],
+    answer: "B"
+  },
+  {
+    question: "What is 25% of 200?",
+    options: ["A. 25", "B. 50", "C. 75", "D. 100"],
+    answer: "B"
+  },
+  {
+    question: "What is the perimeter of a square with side length 5cm?",
+    options: ["A. 10cm", "B. 15cm", "C. 20cm", "D. 25cm"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of 5! (5 factorial)?",
+    options: ["A. 120", "B. 60", "C. 100", "D. 24"],
+    answer: "A"
+  },
+  {
+    question: "What is the sum of the angles in a triangle?",
+    options: ["A. 90°", "B. 180°", "C. 270°", "D. 360°"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of 2³?",
+    options: ["A. 4", "B. 6", "C. 8", "D. 10"],
+    answer: "C"
+  },
+  {
+    question: "What is the slope of the line y = 2x + 3?",
+    options: ["A. 2", "B. 3", "C. 1", "D. 0"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of log₁₀100?",
+    options: ["A. 1", "B. 2", "C. 3", "D. 4"],
+    answer: "B"
+  },
+  {
+    question: "What is the median of the numbers 3, 5, 7, 9, 11?",
+    options: ["A. 5", "B. 7", "C. 9", "D. 11"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of sin 90°?",
+    options: ["A. 0", "B. 0.5", "C. 1", "D. -1"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of 0.5 × 0.2?",
+    options: ["A. 0.1", "B. 0.01", "C. 0.2", "D. 0.02"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 10 ÷ 0.5?",
+    options: ["A. 5", "B. 10", "C. 20", "D. 50"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of 3² + 4²?",
+    options: ["A. 5", "B. 7", "C. 9", "D. 25"],
+    answer: "D"
+  },
+  {
+    question: "What is the value of 1/2 + 1/4?",
+    options: ["A. 1/6", "B. 1/8", "C. 3/4", "D. 3/8"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of √(9 + 16)?",
+    options: ["A. 5", "B. 7", "C. 9", "D. 25"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 2⁴?",
+    options: ["A. 8", "B. 16", "C. 32", "D. 64"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of 100 ÷ 10?",
+    options: ["A. 1", "B. 10", "C. 100", "D. 1000"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of 5 × (6 + 2)?",
+    options: ["A. 30", "B. 40", "C. 50", "D. 60"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of 1/3 × 3/4?",
+    options: ["A. 1/4", "B. 1/3", "C. 1/2", "D. 3/4"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 0.75 as a fraction?",
+    options: ["A. 1/4", "B. 1/2", "C. 3/4", "D. 1/3"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of 2 + 2 × 2?",
+    options: ["A. 6", "B. 8", "C. 4", "D. 10"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 10 - 5 × 2?",
+    options: ["A. 0", "B. 5", "C. 10", "D. 15"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 1/2 ÷ 1/4?",
+    options: ["A. 1/8", "B. 1/2", "C. 2", "D. 4"],
+    answer: "C"
+  },
+  {
+    question: "If M represents the median and D the mode of the measurements 5, 9, 3, 5, 8, then (M, D) is:",
+    options: ["A. (6, 5)", "B. (5, 8)", "C. (5, 7)", "D. (5, 5)", "E. (7, 5)"],
+    answer: "A"
+  },
+  {
+    question: "If x + 2 and x – 1 are factors of the expression lx + 2kx² + 24, find the values of l and k.",
+    options: ["A. l = -6, k = -9", "B. l = -2, k = 1", "C. l = -2, k = -1", "D. l = 0, k = 1", "E. l = 6, k = 0"],
+    answer: "A"
+  },
+  {
+    question: "A construction company is owned by two partners X and Y, and it is agreed that their profit will be divided in the ratio 4:5. At the end of the year, Y received #5,000 more than X. What is the total profit of the company for the year?",
+    options: ["A. #20,000.00", "B. #25,000.00", "C. #30,000.00", "D. #15,000.00", "E. #45,000.00"],
+    answer: "B"
+  },
+  {
+    question: "Given a regular hexagon, calculate each interior angle of the hexagon.",
+    options: ["A. 60°", "B. 30°", "C. 120°", "D. 45°", "E. 135°"],
+    answer: "C"
+  },
+  {
+    question: "Solve the following equations: 4x – 3 = 3x + y = 2y + 5x – 12.",
+    options: ["A. x = 5, y = 2", "B. x = 2, y = 5", "C. x = -2, y = -5", "D. x = 5, y = -2", "E. x = -5, y = -2"],
+    answer: "D"
+  },
+  {
+    question: "If x = 1 is a root of the equation x³ – 2x² – 5x + 6, find the other roots.",
+    options: ["A. -3 and 2", "B. -2 and 2", "C. 3 and -2", "D. 1 and 3", "E. -3 and 1"],
+    answer: "C"
+  },
+  {
+    question: "If x is jointly proportional to the cube of y and the fourth power of z, in what ratio is x increased or decreased when y is halved and z is doubled?",
+    options: ["A. 4:1 increase", "B. 2:1 increase", "C. 1:4 decrease", "D. 1:1 no change", "E. 3:4 decrease"],
+    answer: "A"
+  },
   {
     question: "What is the value of 3 + 5 × 2?",
     options: ["A. 13", "B. 16", "C. 10", "D. 11"],
@@ -37,113 +244,233 @@ const questions = [
     options: ["A. 12", "B. 14", "C. 16", "D. 18"],
     answer: "A"
   },
-  // Add 498 more questions here...
-];
+  {
+    question: "Solve for x: 2x - 4 = 10.",
+    options: ["A. 7", "B. 6", "C. 5", "D. 4"],
+    answer: "A"
+  },
+  {
+    question: "What is the area of a rectangle with length 8cm and width 5cm?",
+    options: ["A. 13cm²", "B. 40cm²", "C. 35cm²", "D. 30cm²"],
+    answer: "B"
+  },
+  {
+    question: "If y = 3x + 2, what is y when x = 4?",
+    options: ["A. 10", "B. 12", "C. 14", "D. 16"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of π (pi) to two decimal places?",
+    options: ["A. 3.14", "B. 3.16", "C. 3.12", "D. 3.18"],
+    answer: "A"
+  },
+  {
+    question: "What is the next number in the sequence: 2, 4, 6, 8, ___?",
+    options: ["A. 9", "B. 10", "C. 11", "D. 12"],
+    answer: "B"
+  },
+  {
+    question: "What is 25% of 200?",
+    options: ["A. 25", "B. 50", "C. 75", "D. 100"],
+    answer: "B"
+  },
+  {
+    question: "What is the perimeter of a square with side length 5cm?",
+    options: ["A. 10cm", "B. 15cm", "C. 20cm", "D. 25cm"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of 5! (5 factorial)?",
+    options: ["A. 120", "B. 60", "C. 100", "D. 24"],
+    answer: "A"
+  },
+  {
+    question: "What is the sum of the angles in a triangle?",
+    options: ["A. 90°", "B. 180°", "C. 270°", "D. 360°"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of 2³?",
+    options: ["A. 4", "B. 6", "C. 8", "D. 10"],
+    answer: "C"
+  },
+  {
+    question: "What is the slope of the line y = 2x + 3?",
+    options: ["A. 2", "B. 3", "C. 1", "D. 0"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of log₁₀100?",
+    options: ["A. 1", "B. 2", "C. 3", "D. 4"],
+    answer: "B"
+  },
+  {
+    question: "What is the median of the numbers 3, 5, 7, 9, 11?",
+    options: ["A. 5", "B. 7", "C. 9", "D. 11"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of sin 90°?",
+    options: ["A. 0", "B. 0.5", "C. 1", "D. -1"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of 0.5 × 0.2?",
+    options: ["A. 0.1", "B. 0.01", "C. 0.2", "D. 0.02"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 10 ÷ 0.5?",
+    options: ["A. 5", "B. 10", "C. 20", "D. 50"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of 3² + 4²?",
+    options: ["A. 5", "B. 7", "C. 9", "D. 25"],
+    answer: "D"
+  },
+  {
+    question: "What is the value of 1/2 + 1/4?",
+    options: ["A. 1/6", "B. 1/8", "C. 3/4", "D. 3/8"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of √(9 + 16)?",
+    options: ["A. 5", "B. 7", "C. 9", "D. 25"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 2⁴?",
+    options: ["A. 8", "B. 16", "C. 32", "D. 64"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of 100 ÷ 10?",
+    options: ["A. 1", "B. 10", "C. 100", "D. 1000"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of 5 × (6 + 2)?",
+    options: ["A. 30", "B. 40", "C. 50", "D. 60"],
+    answer: "B"
+  },
+  {
+    question: "What is the value of 1/3 × 3/4?",
+    options: ["A. 1/4", "B. 1/3", "C. 1/2", "D. 3/4"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 0.75 as a fraction?",
+    options: ["A. 1/4", "B. 1/2", "C. 3/4", "D. 1/3"],
+    answer: "C"
+  },
+  {
+    question: "What is the value of 2 + 2 × 2?",
+    options: ["A. 6", "B. 8", "C. 4", "D. 10"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 10 - 5 × 2?",
+    options: ["A. 0", "B. 5", "C. 10", "D. 15"],
+    answer: "A"
+  },
+  {
+    question: "What is the value of 1/2 ÷ 1/4?",
+    options: ["A. 1/8", "B. 1/2", "C. 2", "D. 4"],
+    answer: "C"
+  },
+  { question: "What is 2 + 2?", options: { A: "3", B: "4", C: "5", D: "6" }, answer: "B" },
+      { question: "Solve for x: 3x + 2 = 11", options: { A: "3", B: "4", C: "2", D: "1" }, answer: "A" },
+      { question: "What is the square root of 16?", options: { A: "3", B: "6", C: "4", D: "5" }, answer: "C" },
+      { question: "Evaluate: 5 * 5 - 10", options: { A: "15", B: "20", C: "25", D: "10" }, answer: "A" },
+      { question: "Simplify: 6/2 + 3", options: { A: "6", B: "9", C: "3", D: "12" }, answer: "A" },
+      { question: "Find the value of x if x/3 = 9", options: { A: "18", B: "21", C: "27", D: "12" }, answer: "C" },
+      { question: "What is the derivative of x^2?", options: { A: "x", B: "2x", C: "x^2", D: "2" }, answer: "B" },
+      { question: "What is the integral of 2x dx?", options: { A: "x^2", B: "2x^2", C: "x", D: "None of the above" }, answer: "A" },
+      { question: "If a triangle has angles 60°, 60°, and 60°, what is the type of triangle?", options: { A: "Scalene", B: "Isosceles", C: "Equilateral", D: "Right-angled" }, answer: "C" },
+      { question: "Solve for y: 2y - 4 = 10", options: { A: "3", B: "7", C: "6", D: "4" }, answer: "C" },
+      { question: "What is the value of π (pi) to two decimal places?", options: { A: "3.12", B: "3.14", C: "3.16", D: "3.18" }, answer: "B" },
+      { question: "What is 7 squared?", options: { A: "49", B: "42", C: "56", D: "36" }, answer: "A" },
+      { question: "Simplify: 8 + 2 * 5", options: { A: "50", B: "28", C: "18", D: "30" }, answer: "C" },
+      { question: "If the radius of a circle is 7, what is the diameter?", options: { A: "7", B: "14", C: "21", D: "49" }, answer: "B" },
+      { question: "Solve: 4x = 32", options: { A: "6", B: "8", C: "7", D: "9" }, answer: "B" },
+      { question: "What is 10% of 200?", options: { A: "10", B: "20", C: "30", D: "40" }, answer: "B" },
+      { question: "What is 5 factorial (5!)?", options: { A: "60", B: "120", C: "24", D: "20" }, answer: "B" },
+      { question: "Simplify: 3(x + 4) = ?", options: { A: "3x + 12", B: "3x + 4", C: "7x + 4", D: "12x + 3" }, answer: "A" },
+      { question: "What is the perimeter of a rectangle with length 5 and width 3?", options: { A: "16", B: "18", C: "20", D: "15" }, answer: "A" },
+      { question: "If a car travels 60 km in 2 hours, what is its speed?", options: { A: "120 km/h", B: "60 km/h", C: "30 km/h", D: "90 km/h" }, answer: "C" },
+      { question: "Solve: 2^3", options: { A: "6", B: "9", C: "8", D: "10" }, answer: "C" },
+      { question: "If x = 5, what is 2x + 3?", options: { A: "10", B: "13", C: "15", D: "12" }, answer: "B" },
+      { question: "What is the area of a triangle with base 10 and height 5?", options: { A: "25", B: "50", C: "30", D: "20" }, answer: "A" },
+      { question: "Solve: x - 3 = 5", options: { A: "7", B: "8", C: "6", D: "9" }, answer: "A" },
+      { question: "What is the cube root of 27?", options: { A: "9", B: "3", C: "6", D: "4" }, answer: "B" },
+      { question: "If a = 2 and b = 3, what is a^b?", options: { A: "6", B: "9", C: "8", D: "12" }, answer: "C" },
+      { question: "Simplify: 10 - 3 * 2", options: { A: "14", B: "4", C: "16", D: "8" }, answer: "B" },
+      { question: "Solve for x: 5x = 45", options: { A: "8", B: "9", C: "7", D: "6" }, answer: "B" },
+      { question: "Find the mean of 4, 8, 6, 10", options: { A: "7", B: "8", C: "6", D: "10" }, answer: "A" },
+      { question: "Convert 50% to a fraction", options: { A: "1/2", B: "1/3", C: "2/3", D: "1/4" }, answer: "A" },
+      { question: "What is the sum of angles in a triangle?", options: { A: "90°", B: "360°", C: "180°", D: "120°" }, answer: "C" },
+     
 
-// Shuffle function to randomize questions
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
+    ];
 
-// Select 100 random questions
-let selectedQuestions = shuffle(questions).slice(0, 100);
+    let currentQuestionIndex = 0;
+    let score = 0;
+    const maxQuestions = 100;
 
-let currentQuestionIndex = 0;
-let score = 0;
-let userAnswers = [];
+    function loadQuestion() {
+      const questionObj = questions[currentQuestionIndex];
+      document.getElementById("question-text").textContent = questionObj.question;
+      const optionsContainer = document.getElementById("options-container");
+      optionsContainer.innerHTML = "";
+      for (const [key, value] of Object.entries(questionObj.options)) {
+        const li = document.createElement("li");
+        li.classList.add("option");
+        li.dataset.option = key;
+        li.textContent = value;
+        li.addEventListener("click", () => selectOption(key));
+        optionsContainer.appendChild(li);
+      }
+      document.getElementById("current-question").textContent = currentQuestionIndex + 1;
+    }
 
-// Display the quiz
-function displayQuiz() {
-  const quizElement = document.getElementById("quiz");
-  quizElement.innerHTML = "";
+    function selectOption(selected) {
+      const options = document.querySelectorAll(".option");
+      options.forEach((option) => option.classList.remove("selected"));
+      document.querySelector(`.option[data-option="${selected}"]`).classList.add("selected");
+    }
 
-  selectedQuestions.forEach((q, index) => {
-    const questionElement = document.createElement("div");
-    questionElement.classList.add("question");
-
-    questionElement.innerHTML = `
-      <p>${index + 1}. ${q.question}</p>
-      <div class="options">
-        ${q.options.map(option => `
-          <label>
-            <input type="radio" name="question${index}" value="${option[0]}">
-            ${option}
-          </label>
-        `).join("")}
-      </div>
-    `;
-    quizElement.appendChild(questionElement);
-  });
-}
-
-// Check answers and display results
-function checkAnswers() {
-  userAnswers = [];
-  selectedQuestions.forEach((q, index) => {
-    const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
-    if (selectedOption) {
-      userAnswers.push(selectedOption.value);
-      if (selectedOption.value === q.answer) {
+    function nextQuestion() {
+      const selectedOption = document.querySelector(".option.selected");
+      if (!selectedOption) {
+        alert("Please select an option before proceeding.");
+        return;
+      }
+      const answer = questions[currentQuestionIndex].answer;
+      if (selectedOption.dataset.option === answer) {
         score++;
       }
-    } else {
-      userAnswers.push(null);
+
+      currentQuestionIndex++;
+
+      if (currentQuestionIndex < maxQuestions) {
+        loadQuestion();
+      } else {
+        endQuiz();
+      }
     }
-  });
 
-  document.getElementById("result").innerHTML = `You scored ${score} out of ${selectedQuestions.length}!`;
-  document.getElementById("buttons").style.display = "block";
-}
+    function endQuiz() {
+      document.getElementById("quiz-container").classList.add("hidden");
+      document.getElementById("results-container").classList.remove("hidden");
+      document.getElementById("score").textContent = score;
+    }
 
-// Display corrections
-function displayCorrections() {
-  const quizElement = document.getElementById("quiz");
-  quizElement.innerHTML = "";
+    document.getElementById("next-button").addEventListener("click", nextQuestion);
+    document.getElementById("play-again").addEventListener("click", () => location.reload());
+    document.getElementById("quit").addEventListener("click", () => alert("Thank you for playing!"));
 
-  selectedQuestions.forEach((q, index) => {
-    const questionElement = document.createElement("div");
-    questionElement.classList.add("question");
-
-    questionElement.innerHTML = `
-      <p>${index + 1}. ${q.question}</p>
-      <div class="options">
-        ${q.options.map(option => `
-          <label style="${option[0] === q.answer ? 'color: green; font-weight: bold;' : userAnswers[index] === option[0] ? 'color: red;' : ''}">
-            ${option}
-          </label>
-        `).join("")}
-      </div>
-    `;
-    quizElement.appendChild(questionElement);
-  });
-}
-
-// Event listeners
-document.getElementById("see-corrections").addEventListener("click", displayCorrections);
-document.getElementById("play-again").addEventListener("click", () => {
-  location.reload(); // Reload the page to restart the quiz
-});
-document.getElementById("quit-quiz").addEventListener("click", () => {
-  window.close(); // Close the window (may not work in all browsers)
-});
-
-// Initialize quiz
-displayQuiz();
-
-// Submit quiz
-document.getElementById("buttons").style.display = "none";
-document.addEventListener("DOMContentLoaded", () => {
-  const submitButton = document.createElement("button");
-  submitButton.id = "submit-quiz";
-  submitButton.className = "btn";
-  submitButton.innerText = "Submit Quiz";
-  submitButton.addEventListener("click", checkAnswers);
-  document.querySelector(".quiz-container").appendChild(submitButton);
-});
+    loadQuestion();
   </script>
 </body>
 </html>
