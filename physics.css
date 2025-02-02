@@ -280,17 +280,20 @@
     a{
         color: inherit;
     }
+    main{
+        display: none;
+    }
 }
 
 @media (min-width: 1000px){
     body{
-        padding: 100px;
         background-color: #2C59C0;
         font-family: "Inter", sans-serif;
         margin: 0;
     }
     header{
         display: flex;
+        justify-content: space-around;
     }
     #arr{
         display: flex;
@@ -299,15 +302,17 @@
     }
     .bb{
         padding: 10px;
+        width: 100%;
     }
     .lang{
         margin-top: 60px;
         padding: 0 60px;
+        width: 50%;
     }
     .round{
         background-color: white;
         display: flex;
-        width: 65%;
+        width: 100%;
         border-radius: 30px;
         justify-content: space-around;
     }
@@ -337,6 +342,8 @@
     }
     .im{
         margin-right: 20px;
+        max-width: 100%;
+        height: auto;
     }
     .master{
         font-size: 1.4rem;
