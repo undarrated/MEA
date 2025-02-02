@@ -279,7 +279,7 @@
     .third .cal{
         color: white;
     }
-    .main{
+    main{
         display: none;
     }
 }
@@ -292,7 +292,7 @@
         display: none;
     }
     body{
-        padding: 20px 100px;
+       
         background-color: #B85E2C;
         font-family: "Inter", sans-serif;
         margin: 0;
@@ -311,7 +311,7 @@
     }
     .lang{
         margin-top: 60px;
-        padding: 0 60px;
+        padding: 0 10px;
         width: 50%;
     }
     .round{
@@ -347,6 +347,8 @@
     }
     .im{
         margin-right: 20px;
+        max-width: 100%;
+        height: auto;
     }
     .master{
         font-size: 1.4rem;
