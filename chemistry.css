@@ -299,6 +299,7 @@
     }
     header{
         display: flex;
+        justify-content: space-around;
     }
     #arr{
         display: flex;
